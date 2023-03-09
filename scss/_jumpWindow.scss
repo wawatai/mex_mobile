@@ -1,0 +1,672 @@
+//彈窗
+.filter {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: $filter;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    &.display {
+        display: flex;
+    }
+
+    .jumpWindow {
+        display: none;
+        width: 92.27vw;
+        height: auto;
+        background: $jumpWindow_BG;
+        border-radius: 4vw;
+        position: relative;
+
+        &.display {
+            display: block;
+        }
+
+        .title {
+            width: 100%;
+            height: 16vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                color: $mainWord_1;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+
+        i {
+
+            &.close {
+                width: 11vw;
+                height: 11vw;
+                @include closeBtn;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -14vw;
+            }
+        }
+
+        //請先XX轉跳視窗
+        &.plsGo,
+        &.plsGo2 {
+
+            .content {
+                width: auto;
+                height: auto;
+                padding: 5vw;
+
+                p {
+                    color: $mainWord_1;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    line-height: 1.2rem;
+                    text-align: center;
+                    padding: 4vw 0;
+                }
+
+                button {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainBtn;
+                    margin-top: 7vw;
+                }
+            }
+        }
+
+        //登入帳密視窗
+        &.loginWindow {
+
+            form {
+                width: 100%;
+                height: auto;
+                padding: 5vw;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 3vw;
+
+                    p {
+                        color: $mainWord_1;
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                        margin-bottom: 2vw;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 11vw;
+                        @include mainInput;
+                    }
+                }
+
+                .forget {
+                    width: 100%;
+                    height: auto;
+                    text-align: right;
+
+                    p {
+                        color: $subWord_1;
+                        font-size: 0.75rem;
+                        font-weight: bold;
+                    }
+                }
+
+                .realLogin {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainBtn;
+                    margin: 7vw 0;
+                }
+
+                .registerBtn {
+                    width: 40%;
+                    height: 11vw;
+                    @include registerBtn;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        //忘記密碼
+        &.forgetWindow {
+
+            form {
+                width: 100%;
+                height: auto;
+                padding: 5vw;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 13vw;
+                        @include mainInput;
+                    }
+
+                    button {
+                        width: auto;
+                        height: 13vw;
+                        @include secondBtn;
+                        font-size: 0.75rem;
+                        text-align: left;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%) scale(0.8);
+                        transform-origin: right;
+                        right: 2vw;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    height: auto;
+                    color: $mainWord_1;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 1.2rem;
+                    margin: 12vw 0 7vw;
+                }
+            }
+        }
+
+        //註冊
+        &.registerWindow {
+
+            form {
+                width: 100%;
+                height: auto;
+                max-height: 66vh;
+                overflow-y: auto;
+                padding: 5vw;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 2vw;
+
+                    &.isCheck {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 11vw;
+
+                        input {
+                            width: 4vw;
+                            height: 4vw;
+                            @include checkBox;
+                            margin-right: 2vw;
+                        }
+
+                        p {
+                            color: $mainWord_2;
+                            font-size: 0.75rem;
+                            font-weight: bold;
+
+                            span {
+                                display: block;
+                                color: $subWord_1;
+                                margin-top: 1vw;
+                            }
+                        }
+                    }
+
+                    input[type="text"] {
+                        width: 100%;
+                        height: 13vw;
+                        @include mainInput;
+                    }
+
+                    button {
+                        width: auto;
+                        height: 13vw;
+                        @include secondBtn;
+                        font-size: 0.75rem;
+                        text-align: left;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%) scale(0.8);
+                        transform-origin: right;
+                        right: 2vw;
+                    }
+
+                    .remind {
+                        color: $mainWord_2;
+                        font-size: 0.75rem;
+                        font-weight: bold;
+                        padding-left: 4vw;
+                        margin-top: 1vw;
+                    }
+                }
+
+                .close {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainBtn;
+                }
+            }
+        }
+
+        //使用條款
+        &.ruleWindow {
+
+            .content {
+                width: 100%;
+                height: 66vh;
+                overflow-y: auto;
+                padding: 5vw;
+
+                .ruleBody {
+                    width: 100%;
+                    height: auto;
+
+                    h2 {
+                        color: $mainWord_1;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        margin-bottom: 2vw;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: auto;
+                        padding: 3vw;
+                        margin-bottom: 2vw;
+
+                        p {
+                            color: $mainWord_2;
+                            font-size: 0.85rem;
+                            font-weight: bold;
+                            line-height: 1.2rem;
+
+                            a {
+                                color: $subWord_1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                width: 90%;
+                height: 11vw;
+                @include mainBtn;
+                display: block;
+                margin: 0 auto 5vw;
+            }
+        }
+
+        //最新公告
+        &.news {
+
+            .box {
+                width: 100%;
+                height: auto;
+                min-height: 50vh;
+                padding: 0 5vw 5vw;
+
+                .typeList {
+                    width: 100%;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 0 2vw;
+                    margin-bottom: 5vw;
+    
+                    li {
+                        width: auto;
+                        height: 11vw;
+                        @include thirdBtn;
+                    }
+                }
+    
+                .content {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                    max-height: 50vh;
+                    overflow-y: auto;
+    
+                    &.display {
+                        display: block;
+                    }
+    
+                    li {
+                        width: 100%;
+                        height: auto;
+                        background: $mainBG_2;
+                        border-radius: 2vw;
+                        border: solid 1px $mainBorder_1;
+                        padding: 4vw;
+                        margin-bottom: 3vw;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+    
+                        p {
+                            color: $mainWord_1;
+                            font-size: 0.85rem;
+                            font-weight: bold;
+                            line-height: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        //遊戲轉帳彈窗
+        &.gameWindow {
+            width: 92.27vw;
+            height: auto;
+
+            form {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 24px 16px 0;
+                border-bottom: solid 1px $mainBorder_1;
+
+                .row {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 6vw;
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(3) {
+                        margin-bottom: 2vw;
+                    }
+
+                    &.btnBox {
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        grid-gap: 5px;
+                        margin: 0 0 4vw 36vw;
+
+                        button {
+                            width: auto;
+                            height: 35px;
+                            margin-bottom: 5px;
+                            @include noBgBtn_Normal;
+                            font-size: 3.4vw;
+                        }
+                    }
+
+                    &.checkBtn {
+
+                        button {
+                            width: 100%;
+                            height: 9.87vw;
+                            @include mainBtn;
+                            margin-left: 36vw;
+                        }
+                    }
+
+                    .smallTitle {
+                        width: 36vw;
+                        height: auto;
+                        color: $mainWord_2;
+                        font-size: 3.4vw;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        flex-shrink: 0;
+                    }
+
+                    .gameName {
+                        color: $mainWord_1;
+                        font-size: 5vw;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 9.87vw;
+                        @include mainInput;
+                    }
+
+                    .arrow_ic {
+                        display: block;
+                        width: 4vw;
+                        height: 3vw;
+                        transform: rotate(90deg);
+                        margin-left: 18vw;
+                    }
+                }
+            }
+
+            .enterBtn {
+                display: block;
+                width: 90%;
+                height: 9.87vw;
+                margin: 4.8vw auto;
+                @include mainBtn;
+            }
+        }
+
+        //更變密碼
+        &.passwordWindow {
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 5vw;
+
+                input {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainInput;
+                    margin-bottom: 2vw;
+                }
+
+                button {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainBtn;
+                    margin-top: 7vw;
+                }
+            }
+        }
+
+        //修改手機
+        &.phoneWindow {
+
+            .smallTitle {
+                width: 100%;
+                height: auto;
+                color: $mainWord_1;
+                font-size: 0.85rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 4vw 0 9vw;
+
+                span {
+                    display: block;
+                    margin-bottom: 4vw;
+                }
+            }
+
+            form {
+                width: 100%;
+                height: auto;
+                padding: 0 5vw 5vw;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 2vw;
+
+                    input {
+                        width: 100%;
+                        height: 13vw;
+                        @include mainInput;
+                    }
+
+                    button {
+                        width: auto;
+                        height: 13vw;
+                        @include secondBtn;
+                        font-size: 0.75rem;
+                        text-align: left;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%) scale(0.8);
+                        transform-origin: right;
+                        right: 2vw;
+                    }
+                }
+
+                .cellphoneCheck {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainBtn;
+                    margin-top: 7vw;
+                }
+            }
+        }
+
+        //查看紅利詳情
+        &.pointWindow {
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 5vw 5vw 10vw;
+
+                .smallTitle {
+                    color: $mainWord_1;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 2vw;
+                }
+
+                input {
+                    width: 100%;
+                    height: 11vw;
+                    @include mainInput;
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+
+        //查看流水
+        &.waterWindow {
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 5vw 5vw 10vw;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    background: $mainBG_3;
+                    border: solid 1px $mainBorder_1;
+                    border-radius: 3vw;
+
+                    li {
+                        width: 100%;
+                        height: 11vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 4vw;
+
+                        &.title {
+                            border-bottom: solid 1px $mainBorder_1;
+
+                            p {
+                                color: $subWord_1;
+                                font-size: 1.2rem;
+                                
+                                &:last-child {
+                                    width: auto;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        p {
+                            color: $mainWord_1;
+                            font-size: 0.85rem;
+                            font-weight: bold;
+            
+                            &:last-child {
+                                width: 50%;
+                                font-weight: normal;
+                                text-align: center;
+            
+                                &.money {
+                                    color: $subWord_2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //任務詳情
+        &.eventWindow {
+            width: 92.27vw;
+            height: auto;
+
+            .content {
+                width: 100%;
+                height: auto;
+                max-height: 76vh;
+                overflow-y: auto;
+                box-sizing: border-box;
+                padding: 24px 24px 0;
+
+                p {
+                    color: $mainWord_1;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    line-height: 18px;
+                    margin-bottom: 8px;
+                    word-break: break-all;
+                }
+
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                padding: 20px 0;
+                text-align: center;
+
+                button {
+                    width: 92%;
+                    height: 42px;
+                    @include mainBtn;
+                }
+            }
+        }
+    }
+}

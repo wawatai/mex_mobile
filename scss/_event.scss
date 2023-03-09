@@ -1,0 +1,191 @@
+//優惠選擇列
+.eventType {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    background: $choose_BG;
+
+    ul {
+        display: flex;
+
+        li {
+            width: auto;
+            height: 72px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 5px;
+
+            &:active,&.active {
+                background: $choose_ActiveBG;
+
+                .all_ic {
+
+                    &::before {
+                        top: -6vw;
+                        filter: drop-shadow(0 6vw 0 #ff4719);
+                    }
+                }
+
+                p {
+                    color: $choose_ActiveWord;
+                }
+            }
+
+            .all_ic {
+                width: 6vw;
+                height: 6vw;
+                margin-bottom: 8px;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            p {
+                color: $choose_Word;
+                font-size: 2vw;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//優惠列表
+.eventList {
+    width: 100%;
+    height: calc(100vh - 168px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    background: $mainBG_1;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .eventBox {
+                width: 100%;
+                height: auto;
+                background: $mainBG_2;
+                border-radius: 1.5vw;
+                overflow: hidden;
+                box-sizing:  border-box;
+                padding: 5px 5px 0;
+
+                p {
+                    width: 100%;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    justify-content: space-between;
+
+                    span {
+                        display: inline-block;
+                        width: 72%;
+                        color: $mainWord_1;
+                        font-size: 3.4vw;
+                        font-weight: bold;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    button {
+                        width: 78px;
+                        height: 23px;
+                        @include mainBtn;
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//優惠內頁
+.eventDetail {
+    width: 100%;
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    background: $mainBG_1;
+    overflow-y: auto;
+
+    .eventImg {
+        box-sizing: border-box;
+        padding: 5px;
+        flex-shrink: 0;
+    }
+
+    .detailContent {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px 8px;
+        border-radius: 5px;
+
+        ul {
+            background: $mainBG_2;
+            border-radius: 5px;
+            padding: 16px;
+
+            li {
+                margin-bottom: 20px;
+
+                &.title {
+                    
+                    p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $mainWord_1;
+                        font-size: 4vw;
+                    }
+                }
+
+                p {
+                    color: $mainWord_3;
+                    font-size: 3.7vw;
+                    font-weight: bold;
+                    line-height: 4.5vw;
+
+                    &.remind {
+                        color: $remind;
+                    }
+                }
+            }
+        }
+
+        .contentFooter {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+    }
+}

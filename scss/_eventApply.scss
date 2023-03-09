@@ -1,0 +1,194 @@
+//優惠選擇列
+.eventApplyType {
+    width: 100%;
+    height: auto;
+
+    ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+
+        li {
+            width: 34%;
+            height: 11vw;
+            color: $mainWord_1;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            opacity: 0.4;
+
+            &::before {
+                display: none;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.5vw;
+                background: $mainBorder_1;
+                border-radius: 30vw;
+                left: 0;
+                bottom: 0;
+            }
+
+            &:active,&.active {
+                opacity: 1;
+
+                &::before {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//優惠列表
+.applyList {
+    display: none;
+    width: 100%;
+    height: auto;
+
+    &.display {
+        display: block;
+    }
+
+    .listBox {
+        width: 100%;
+        height: auto;
+        padding: 4vw;
+
+        .list {
+            width: 100%;
+            height: auto;
+            background: $mainBG_1;
+            border-radius: 5vw;
+            border: solid 1px $mainBorder_1;
+            margin-bottom: 4vw;
+
+            .title {
+                width: 100%;
+                height: 11vw;
+                border-bottom: solid 1px $mainBorder_1;
+                color: $subWord_1;
+                font-size: 1.2rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                padding: 0 5vw;
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 2vw 3vw;
+                    
+                    p {
+                        color: $mainWord_1;
+                        font-size: 0.85rem;
+
+                        &.smallTitle {
+                            font-weight: bold;
+                        }
+
+                        &.limit {
+                            color: $subWord_2;
+                        }
+
+                        span {
+                            color: $subWord_3;
+                        }
+                    }
+                }
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 4vw 3vw;
+
+                &.single {
+
+                    button {
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    width: 48%;
+                    height: 9vw;
+
+                    &.applyBtn {
+                        @include mailBtn_1;
+                        font-size: 1rem;
+                    }
+
+                    &.checkBtn {
+                        @include mainBtn;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .searchContent {
+        width: 100%;
+        height: auto;
+        padding: 4vw 3vw;
+
+        .row {
+            width: 100%;
+            height: auto;
+
+            &:first-child {
+                margin-bottom: 4vw;
+            }
+
+            p {
+                color: $mainWord_1;
+                font-size: 0.85rem;
+                font-weight: bold;
+                margin-bottom: 2vw;
+            }
+
+            select {
+                width: 100%;
+                height: 11vw;
+                @include mainSelect;
+                border-radius: 2vw;
+            }
+        }
+
+        .date {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: 4vw 0;
+
+            button {
+                width: 22%;
+                height: 10vw;
+                @include fourthBtn;
+            }
+        }
+
+        .check {
+            width: 100%;
+            height: 11vw;
+            @include mainBtn;
+        }
+    }
+}

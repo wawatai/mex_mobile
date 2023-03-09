@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">初心者ガイド</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">KYC（本人確認及び身分証明書の提示)</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>初心者ガイド</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <option value="" disabled>選んでください</option>
+                        <option value="./help_new.html" selected>初心者ガイド</option>
+                        <option value="./help_often.html">よくある質問</option>
+                        <option value="./help_about.html">当社について</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>KYC（本人確認及び身分証明書の提示）</li>
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li>
+                    <p class="smallTitle">本人確認書類のアップロード</p>
+                    <p class="smallTitle">本人確認書類</p>
+                    <p>
+                        <span class="remind">● 必要な書類 ● 本人確認書類と運転免許証はいずれかをご提出くださいませ。</span>
+                    </p>
+                    <p>運転免許証、パスポート・住民基本台帳カード・外国人登録証(ARC)・マイナンバーカードがご利用いただけます。</p>
+                    <p class="smallTitle">アップロードの際は以下の点にご注意下さい:</p>
+                    <p>1. 書類が鮮明に写っていること</p>
+                    <p>2. 四隅まで写っていること</p>
+                    <p>3. 提出時点で有効期限内であること</p>
+                    <p>4. 手書きで「FORTUNA認証用」と書いた紙を一緒に確認書類と撮影することIDは運転免許証以外の写真付きの身分証明書のこと</p>
+                    <p>
+                        <span class="remind">KYCは順番に審査させていただいておりますので、審査が完了されましたら、インボックスにてメッセージを送らせていただきます。</span>
+                    </p>
+                    <p>
+                        <span class="remind">また、KYCが認証されてなくても、ゲームをご利用いただけますので、ご安心ください。</span>
+                    </p>
+                    <img src="../images/help/id.jpg" alt="">
+                    <div class="uploadBox">
+                        <p>表面</p>
+                        <div class="box">
+                            <i class="upload_ic"></i>
+                            <button>ファイルを選択</button>
+                            <p>
+                                <span class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</span>
+                            </p>
+                        </div>
+                        <p>裏面</p>
+                        <div class="box">
+                            <i class="upload_ic"></i>
+                            <button>ファイルを選択</button>
+                            <p>
+                                <span class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</span>
+                            </p>
+                        </div>
+                        <button class="sendBtn">送信</button>
+                        <button class="reBtn">キャンセル</button>
+                    </div>
+                    <hr>
+                    <p class="smallTitle">住所確認書類</p>
+                    <p>
+                        <span class="remind">● 必要な書類 ●</span>
+                    </p>
+                    <p>住所確認書類は、ご本人名義かつ現住所の公的書類・公共料金・携帯料金の支払書類・クレジットカードの利用明細書・政府発行の市・区役所からの郵便物がご利用いただけます</p>
+                    <p class="smallTitle">アップロードの際は以下の点にご注意下さい:</p>
+                    <p>3. パスポート（表面に写真ページ、裏面に住所記入ページ）</p>
+                    <p>4. 外国人登録証 (ARC)</p>
+                    <p>5. マイナンバーカード（両面）※裏面のマイナンバーは付箋などで隠し可能</p>
+                    <p class="smallTitle">必要な情報は、</p>
+                    <p>1. 書類が鮮明に写っていること</p>
+                    <p>2. 四隅まで写っていること</p>
+                    <p>3. 利用できる書類は発行日より3ヶ月以内のものに限ります</p>
+                    <p>4. 写真がぶれて文字が読み取れない場合は、お撮り直し頂く可能性がございます</p>
+                    <p>5. 手書きで「FORTUNA認証用」と書いた紙を一緒に確認書類と撮影すること</p>
+                    <p>
+                        <span class="remind">KYCは順番に審査させていただいておりますので、審査が完了されましたら、インボックスにてメッセージを送らせていただきます。</span>
+                    </p>
+                    <p>
+                        <span class="remind">また、KYCが認証されてなくても、ゲームをご利用いただけますので、ご安心ください。</span>
+                    </p>
+                    <img src="../images/help/id_2.jpg" alt="">
+                    <div class="uploadBox">
+                        <div class="box">
+                            <i class="upload_ic"></i>
+                            <button>ファイルを選択</button>
+                            <p>
+                                <span class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</span>
+                            </p>
+                        </div>
+                        <button class="sendBtn">送信</button>
+                        <button class="reBtn">キャンセル</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>ホーム</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>プロモーション</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>ウォレット</p>
+            </li>
+            <li class="active" onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>カスタマーサービス</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>マイページ</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                ヒント
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <p>申し込み完了。KYC審査中です。</p>
+                <button class="close">確認</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

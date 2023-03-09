@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./wallet.html'"></i>
+            <div class="title">入金エリア</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--存款-->
+        <div class="depositWrap">
+            <!--跑馬燈-->
+            <div class="marqueeBox">
+                <p class="title">最新ニュース</p>
+                <div class="marquee">
+                    <pre>プロモーション~スロットリベートボーナス</pre>
+                </div>
+            </div>
+            <div class="depList">
+                <p class="title">決済方法を選択</p>
+                <div class="listWrap">
+                    <ul>
+                        <li class="active">
+                            <i class="card_ic"></i>
+                            <p>銀行振込</p>
+                        </li>
+                        <li>
+                            <i class="tigerPay_ic"></i>
+                            <p>TigerPay</p>
+                        </li>
+                        <li>
+                            <i class="iWallet_ic"></i>
+                            <p>iWalletPay</p>
+                        </li>
+                        <li>
+                            <i class="usdt_ic"></i>
+                            <p>USDT</p>
+                        </li>
+                        <li>
+                            <i class="venus_ic"></i>
+                            <p>Venus Point</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="depContent card display">
+                <p class="bigTitle">送金情報を入力してください</p>
+                <div class="row">
+                    <p class="title">過去の送金の銀行情報を選択し、すばやく情報を入力します</p>
+                    <select>
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="">上海銀行</option>
+                        <option value="">上海銀行</option>
+                        <option value="">上海銀行</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <p class="title">銀行名</p>
+                    <select>
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="">0009 - 三井住友銀行</option>
+                        <option value="">0001 - みずほ銀行</option>
+                    </select>
+                    <p class="remind">関連する単語を入力して、銀行名を選んでください;メニューをクリックして銀行名情報を入力し、情報が正しいことを確認してください。</p>
+                </div>
+                <div class="row">
+                    <p class="title">支店名</p>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <p class="title">口座番号</p>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <p class="title">振込人名義(振込ID＋お名前)</p>
+                    <div class="inputBox">
+                        <p class="firstWord">080</p>
+                        <input type="text">
+                        <i class="copy"></i>
+                    </div>
+                    <p class="remind">※ 振込する際に振込名義の項目は「振込ID＋お名前」を必ず記載してください。</p>
+                </div>
+                <div class="row">
+                    <p class="title">金額</p>
+                    <input type="text" value="0">
+                    <p class="remind">入金額は「¥1,000〜¥200,000」でなければなりません</p>
+                </div>
+                <p class="bigTitle">下記口座にご入金ください</p>
+                <div class="row border">
+                    <p class="name">銀行</p>
+                    <p class="text">paypay銀行</p>
+                </div>
+                <div class="row border">
+                    <p class="name">支店名</p>
+                    <p class="text">005 ビジネス営業部</p>
+                    <i class="copy"></i>
+                </div>
+                <div class="row border">
+                    <p class="name">預金種目</p>
+                    <p class="text">普通口座</p>
+                </div>
+                <div class="row border">
+                    <p class="name">口座番号</p>
+                    <p class="text">5962423</p>
+                    <i class="copy"></i>
+                </div>
+                <div class="row border">
+                    <p class="name">口座名義(カタカナ)</p>
+                    <p class="text">リバーブックジャパン（カ</p>
+                    <i class="copy"></i>
+                </div>
+                <button class="check">送金しました</button>
+            </div>
+            <div class="depContent tigerPay">
+                <div class="row">
+                    <p class="title">チャンネルを選択</p>
+                    <input type="text" value="Tiger Pay" disabled>
+                </div>
+                <div class="row">
+                    <p class="title">入金額</p>
+                    <input type="text" value="0">
+                    <p class="remind">入金額は「JPY ¥20〜無制限」でなければなりません;</p>
+                    <p class="remind"> 参照為替レート JPY ¥1 : JPY ¥ 1</p>
+                </div>
+                <button class="check">今すぐ入金</button>
+            </div>
+            <div class="depContent iWallet">
+                <div class="row">
+                    <p class="title">チャンネルを選択</p>
+                    <input type="text" value="iWallet" disabled>
+                </div>
+                <div class="row">
+                    <p class="title">入金額</p>
+                    <input type="text" value="0">
+                    <p class="remind">入金額は「JPY ¥20〜無制限」でなければなりません;</p>
+                    <p class="remind"> 参照為替レート JPY ¥1 : JPY ¥ 1</p>
+                </div>
+                <button class="check">今すぐ入金</button>
+            </div>
+            <div class="depContent usdt">
+                <div class="row">
+                    <p class="title">チャンネルを選択</p>
+                    <select>
+                        <option value="" disabled selected>選んでください</option>
+                        <option value="">B-TRC20</option>
+                        <option value="">A-TRC20</option>
+                    </select>
+                </div>
+                <button class="check">今すぐ入金</button>
+            </div>
+            <div class="depContent venus">
+                <div class="row">
+                    <p class="title">チャンネルを選択</p>
+                    <input type="text" value="Venus Point" disabled>
+                </div>
+                <div class="row">
+                    <p class="title">Venus Point アカウント</p>
+                    <input type="text" placeholder="アカウントを入力してください">
+                </div>
+                <div class="row">
+                    <p class="title">Venus Point パスワード</p>
+                    <input type="text" placeholder="パスワードを入力してください">
+                </div>
+                <div class="row">
+                    <p class="title">入金額</p>
+                    <input type="text" value="0">
+                    <p class="remind">入金額は「VenusPoint $20〜VenusPoint $100000」でなければなりません;</p>
+                    <p class="remind">参照為替レート VenusPoint $1 : JPY ¥ 130.5099</p>
+                </div>
+                <button class="check">今すぐ入金</button>
+            </div>
+            <div class="remindBox">
+                <p class="title">ご注意</p>
+                <p>入金金額は整数である必要があります。例：21（ ◯ ）、21.5（ ✕ ）</p>
+                <p>ご入金後、30分以内にメインウォレットに反映致します。万が一30分経過してもメインウォレットに入っていない場合、お手数ではございますが、ライブチャットまでご連絡をお願い致します。</p>
+                <p class="remind">※ 入金ボーナスを申請されたい場合は、ご入金、プレイ前に入金ボーナスをご申請ください。</p>
+                <p class="title">Venus Pointでの入金</p>
+                <p>毎日00:00AM～01:00AMはVenus Point側で決算を行います。この時間内の入金額の即時反映はできかねますので、ご了承ください。30分経ってもメインウォレットに反映されない場合は、お手数ですがライブチャットまでお問い合わせください。</p>
+                <p class="title">仮想通貨</p>
+                <p>1. 仮想通貨での入金(通貨：米ドル)は少し時間が必要ですので、約30分～2時間でメインウォレットに反映致します。仮想通貨の送付には有効時間がありますので、申請の際にはご注意ください。有効時間が切れてから送付されますと，該当取引が承認されない場合があります。その際は返金まで24～72時間かかることがあり、また、手数料はお客様のご負担となります。</p>
+                <p>2. 仮想通貨の送付の際にはQRコードの利用を推奨いたします。アドレスをコピーして使用する場合は、実際に送付する金額が入金予定額と同額であるかを必ずご確認ください。入力に間違いがあり過払いが生じた場合でも、当サイトは一切の返金を行いません。</p>
+                <p class="title">銀行振込入金</p>
+                <p>銀行振込での入金は24時間ご利用いただけます。</p>
+                <p>※ 祝日、振替休日、年始はご利用いただけない場合がございます。</p>
+                <p>※ ご利用銀行の営業時間によって、送金できかねる場合がございます。</p>
+                <p>※ 銀行振込手数料はお客様負担となります。</p>
+                <p>※ 銀行振込でのご入金は順次に対応させていただいておりますため、お時間がかかってしまう場合がございます。  30分経っても入金額が反映されない場合は、お手数ですがライブチャットへお問い合わせください。</p>
+                <p>深夜の時間帯は反映にお時間がかかってしまう場合がございます。予めご了承ください。</p>
+                <p class="remind">※【金額確認】に表示された金額をご確認の上、送金をお願いします。</p>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>ホーム</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>プロモーション</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>ウォレット</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>カスタマーサービス</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>マイページ</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter display">
+        <!--無信用卡提示-->
+        <div class="jumpWindow plsGo display">
+            <div class="title">
+                ヒント
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <p>先にログインください</p>
+                <button class="close">確認</button>
+            </div>
+        </div>
+        <!--loading-->
+        <div class="jumpWindow loading">
+            <div class="title">ヒント</div>
+            <div class="content">
+                <div class="img"></div>
+                <p>loading...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

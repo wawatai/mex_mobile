@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="content">
+            <p class="title">Perfil</p>
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--會員中心內頁滑軸-->
+        <div class="memberList">
+            <ul>
+                <li class="active">Información personal</li>
+                <li onclick="window.location.href='./member_platform.html'">
+                    Contraseña de la cuenta
+                    <br>
+                    de la plataforma
+                </li>
+            </ul>
+        </div>
+        <!--會員中心內頁基本情報-->
+        <div class="memberInfo">
+            <!--上輸入列-->
+            <form>
+                <ul class="inputList">
+                    <li>
+                        <p>
+                            <em>※</em>
+                            Nombre real
+                        </p>
+                        <input type="text" placeholder="実名を入力してください。カード所有者の名前は同じである必要があります。" value="user898">
+                    </li>
+                    <li>
+                        <p>
+                            <em>※</em>
+                            Cumpleaños
+                        </p>
+                        <input type="text" value="yyyy-mm-dd">
+                    </li>
+                    <li>
+                        <p>
+                            <em>※</em>
+                            Email
+                        </p>
+                        <input type="text" placeholder="Ingrese el correo electrónico">
+                    </li>
+                    <li>
+                        <p>ID de Whatsapp</p>
+                        <input type="text" placeholder="Por favor ingrese">
+                    </li>
+                    <li>
+                        <p>ID de Telegram</p>
+                        <input type="text" placeholder="Por favor ingrese">
+                    </li>
+                    <li class="btnBox">
+                        <button>guardar</button>
+                    </li>
+                    <li>
+                        <p>Cuenta de miembro</p>
+                        <input type="text" value="user898" readonly>
+                    </li>
+                    <li>
+                        <p>Código de invitación</p>
+                        <p>
+                            MIWJD61513
+                            <button>Copiar</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p>URL de invitación</p>
+                        <p>
+                            <span>https://www.fortuna888...</span>
+                            <button>Copiar</button>
+                        </p>
+                    </li>
+                    <li class="qrBox">
+                        <p>URL de invitación QRCode</p>
+                        <div class="qr"></div>
+                    </li>
+                    <li class="sercurity">
+                        <p>Nivel de seguridad</p>
+                        <p class="high">Alto</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="noCheck"></i>
+                            ingrese la información personal
+                        </p>
+                        <p class="none">Sin autenticar</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="isCheck"></i>
+                            Vincular número de móvil
+                        </p>
+                        <p>
+                            0800100200
+                            <button type="button" class="changePhoneBtn">modificar</button>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="noCheck"></i>
+                            Agregar tarjeta bancaria
+                        </p>
+                        <p class="none">Sin autenticar</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="noCheck"></i>
+                            ingrese el correo electrónico
+                        </p>
+                        <p class="none">Sin autenticar</p>
+                    </li>
+                    <li>
+                        <p>
+                            <i class="isCheck"></i>
+                            Cambiar contraseña
+                        </p>
+                        <p>
+                            <button type="button" class="changePwdBtn">modificar</button>
+                        </p>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--更變手機-->
+        <div class="jumpWindow phoneWindow">
+            <div class="title">
+                <p>Vincular número de móvil</p>
+            </div>
+            <p class="smallTitle">
+                <span>Número de teléfono antiguo :</span>
+                08001212221212
+            </p>
+            <form>
+                <label>
+                    <input type="text" placeholder="Número de teléfono antiguo">
+                    <button type="button">
+                        Código de
+                        <br>
+                        verificación
+                    </button>
+                </label>
+                <label>
+                    <input type="text" placeholder="Por favor ingrese el código de verificación">
+                </label>
+                <button type="button" class="cellphoneCheck">Confirmar</button>
+            </form>
+            <i class="close"></i>
+        </div>
+        <!--更變手機第二彈窗-->
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                <p>Tips</p>
+            </div>
+            <div class="content">
+                <p>Se requiere cuenta  Se requiere contraseña</p>
+                <button class="close">Confirmar</button>
+            </div>
+        </div>
+        <!--更變密碼-->
+        <div class="jumpWindow passwordWindow">
+            <div class="title">
+                <p>Cambiar contraseña</p>
+            </div>
+            <form class="content">
+                <input type="text" placeholder="Contraseña antigua">
+                <input type="text" placeholder="Nueva contraseña">
+                <input type="text" placeholder="Confirmar nueva contraseña">
+                <button type="button" class="passwordCheck">Confirmar</button>
+            </form>
+            <i class="close"></i>
+        </div>
+        <!--更變密碼第二彈窗-->
+        <div class="jumpWindow plsGo2">
+            <div class="title">
+                <p>Tips</p>
+            </div>
+            <div class="content">
+                <p>
+                    Por favor, vaya al perfil para enlazar la
+                    <br>
+                    información personal
+                </p>
+                <button class="close">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

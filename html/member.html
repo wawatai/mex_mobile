@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="content">
+            <p class="title">Centro de miembros</p>
+            <i class="back_arrow" onclick="window.location.href='./index_inner.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--會員中心-->
+        <div class="memberWrap">
+            <!--玩家資訊-->
+            <div class="user">
+                <!--上列-->
+                <div class="info">
+                    <!--左-->
+                    <div>
+                        <div class="account">
+                            <div class="lv">Membresia General</div>
+                            <p>user898</p>
+                        </div>
+                        <p class="date">Únete por 45 días</p>
+                    </div>
+                    <!--右-->
+                    <button class="infoBtn" onclick="window.location.href='./member_info.html'">
+                        <i class="info_ic"></i>
+                        Perfil
+                    </button>
+                </div>
+                <!--入金顯示框-->
+                <div class="wallet">
+                    <p>
+                        billetera principal
+                        <span>$0</span>
+                    </p>
+                    <button class="active" onclick="window.location.href='./deposit.html'">Deposite ahora</button>
+                </div>
+                <!--大按鈕區-->
+                <div class="btnBox">
+                    <button onclick="window.location.href='./wallet.html'">
+                        <i class="bigList_ic wallet"></i>
+                        <p>Mi billetera</p>
+                    </button>
+                    <button onclick="window.location.href='./vip.html'">
+                        <i class="bigList_ic vip"></i>
+                        <p>Miembro VIP</p>
+                    </button>
+                </div>
+                <!--其他選單-->
+                <ul>
+                    <li onclick="window.location.href='./bettingRecord.html'">
+                        <i class="list_ic bettingRecord"></i>
+                        <p>
+                            Historial de
+                            <br>
+                            apuestas
+                        </p>
+                    </li>
+                    <li onclick="window.location.href='./dealRecord.html'">
+                        <i class="list_ic dealRecord"></i>
+                        <p>
+                            Historial de
+                            <br>
+                            transacciones
+                        </p>
+                    </li>
+                    <li onclick="window.location.href='./mail.html'">
+                        <i class="list_ic mail"></i>
+                        <p>
+                            Bandeja de
+                            <br>
+                            entrada
+                        </p>
+                        <em class="bubble">3</em>
+                    </li>
+                    <li onclick="window.location.href='./card.html'">
+                        <i class="list_ic card"></i>
+                        <p>
+                            Vincular tarjeta
+                            <br>
+                            bancaria
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--選項條-->
+            <ul class="optionBox">
+                <li class="options" onclick="window.location.href='./invite.html'">
+                    <p>
+                        <i class="member_ic invite"></i>
+                        Invitar a miembros
+                    </p>
+                    <i class="arrow_ic"></i>
+                </li>
+                <li class="options" onclick="window.location.href='./searchPoint.html'">
+                    <p>
+                        <i class="member_ic point"></i>
+                        Consulta de Bono
+                    </p>
+                    <i class="arrow_ic"></i>
+                </li>
+                <li class="options" onclick="window.location.href='./eventApply.html'">
+                    <p>
+                        <i class="member_ic eventApply"></i>
+                        Aplicación
+                    </p>
+                    <i class="arrow_ic"></i>
+                </li>
+                <li class="options" onclick="window.location.href='./help_new.html'">
+                    <p>
+                        <i class="member_ic helpNew"></i>
+                        Centro de ayuda
+                    </p>
+                    <i class="arrow_ic"></i>
+                </li>
+                <li class="options" onclick="window.location.href='./help_about.html'">
+                    <p>
+                        <i class="member_ic helpAbout"></i>
+                        Sobre nosotros
+                    </p>
+                    <i class="arrow_ic"></i>
+                </li>
+                <li class="options" onclick="window.location.href='../index.html'">
+                    <p>
+                        <i class="member_ic logout"></i>
+                        Cerrar sesión
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

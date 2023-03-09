@@ -1,0 +1,70 @@
+//footer
+footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    ul {
+        width: 100%;
+        height: 6vh;
+        @include footerBG;
+
+        li {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:active,&.active {
+
+                i {
+                    opacity: 1;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+
+            i {
+                width: 7vw;
+                height: 7vw;
+                opacity: 0.4;
+
+                &.menu_ic {
+                    background-position-x: 0;
+                }
+
+                &.event_ic {
+                    background-position-x: 25%;
+                }
+
+                &.wallet_ic {
+                    background-position-x: 50%;
+                }
+
+                &.service_ic {
+                    background-position-x: 75%;
+                }
+
+                &.member_ic {
+                    background-position-x: 100%;
+                }
+            }
+
+            span {
+                display: none;
+                width: 5vw;
+                height: 0.5vw;
+                background: $mainWord_1;
+                border-radius: 30vw;
+                margin-top: 1vw;
+            }
+        }
+    }
+}

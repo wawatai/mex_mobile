@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <div class="title">Aplicación</div>
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--優惠選擇列-->
+        <div class="eventApplyType">
+            <ul>
+                <li class="active">Aplicación</li>
+                <li>Solicitar retiro</li>
+                <li>Registro de solicitud</li>
+            </ul>
+        </div>
+        <!--優惠申請-->
+        <div class="applyList choose display">
+            <ul class="listBox">
+                <li class="list">
+                    <div class="title">優惠標題</div>
+                    <ul>
+                        <li>
+                            <p class="smallTitle">Tiempo de la promoción</p>
+                            <p>ilimitado</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Período de la promoción</p>
+                            <p>Semanal</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Récord de bonificación</p>
+                            <p>
+                                <span>1</span> / 1
+                            </p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Monto de apuesta actual</p>
+                            <p class="limit">0</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Plataforma de juego específica</p>
+                            <p>ilimitado</p>
+                        </li>
+                    </ul>
+                    <div class="btnBox">
+                        <button class="applyBtn">Solicitar retiro</button>
+                        <button class="checkBtn">ver actividad</button>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="title">優惠標題</div>
+                    <ul>
+                        <li>
+                            <p class="smallTitle">Tiempo de la promoción</p>
+                            <p>ilimitado</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Período de la promoción</p>
+                            <p>Semanal</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Récord de bonificación</p>
+                            <p>
+                                <span>1</span> / 1
+                            </p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Monto de apuesta actual</p>
+                            <p class="limit">0</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Plataforma de juego específica</p>
+                            <p>ilimitado</p>
+                        </li>
+                    </ul>
+                    <div class="btnBox">
+                        <button class="applyBtn" disabled>Solicitar retiro</button>
+                        <button class="checkBtn" disabled>ver actividad</button>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="title">優惠標題</div>
+                    <ul>
+                        <li>
+                            <p class="smallTitle">Tiempo de la promoción</p>
+                            <p>ilimitado</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Período de la promoción</p>
+                            <p>Semanal</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Récord de bonificación</p>
+                            <p>
+                                <span>1</span> / 1
+                            </p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Monto de apuesta actual</p>
+                            <p class="limit">0</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Plataforma de juego específica</p>
+                            <p>ilimitado</p>
+                        </li>
+                    </ul>
+                    <div class="btnBox">
+                        <button class="applyBtn" disabled>Solicitar retiro</button>
+                        <button class="checkBtn">ver actividad</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="applyList already">
+            <ul class="listBox">
+                <li class="list">
+                    <div class="title">優惠標題</div>
+                    <ul>
+                        <li>
+                            <p class="smallTitle">Tiempo de la promoción</p>
+                            <p>ilimitado</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Período de la promoción</p>
+                            <p>Semanal</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Récord de bonificación</p>
+                            <p>
+                                <span>1</span> / 1
+                            </p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Monto de apuesta actual</p>
+                            <p class="limit">0</p>
+                        </li>
+                        <li>
+                            <p class="smallTitle">Plataforma de juego específica</p>
+                            <p>ilimitado</p>
+                        </li>
+                    </ul>
+                    <div class="btnBox single">
+                        <button class="checkBtn">ver actividad</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--優惠申請紀錄-->
+        <div class="applyList record">
+            <div class="searchContent">
+                <div class="row">
+                    <p>Todo</p>
+                    <select>
+                        <option value="">2023/1/1 - 2023/1/7</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <p>Fecha</p>
+                    <select>
+                        <option value="">2023/1/1 - 2023/1/7</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <button>Ayer</button>
+                    <button class="active">Hoy</button>
+                    <button>Semana</button>
+                    <button>Mes</button>
+                </div>
+                <button class="check">Consulta</button>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--已送出申請-->
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                ヒント
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <p>レビュー中</p>
+                <button class="close">確認</button>
+            </div>
+        </div>
+        <!--任務詳情-->
+        <div class="jumpWindow eventWindow">
+            <div class="title">ミッションの詳細</div>
+            <div class="content">
+                <img src="../images/event_1.png" alt="">
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            </div>
+            <div class="btnBox">
+                <button class="close">確認</button>
+            </div>
+        </div>
+    </div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

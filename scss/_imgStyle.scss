@@ -1,0 +1,351 @@
+//member
+.memberWrap .infoBtn .info_ic {
+    background: url('../images/icon/info_ic.png') no-repeat center;
+    background-size: contain;
+}
+.memberWrap .bigList_ic {
+    background: url('../images/icon/memberBigBtn.png') no-repeat;
+    background-size: 200%;
+}
+.memberWrap .list_ic {
+    background: url('../images/icon/memberMainBtn.png') no-repeat;
+    background-size: 500%;
+}
+.memberWrap .member_ic {
+    background: url('../images/icon/memberIC.png') no-repeat;
+    background-size: 600%;
+}
+.memberWrap .arrow_ic {
+    background: url('../images/icon/svg/arrow_1.svg') no-repeat center;
+    background-size: contain;
+}
+.memberInfo .qr {
+    background: url('../images/qr.png') no-repeat center;
+    background-size: contain;
+}
+.memberInfo .noCheck {
+    background: url('../images/icon/noCheck.png') no-repeat center;
+    background-size: contain;
+}
+.memberInfo .isCheck {
+    background: url('../images/icon/isCheck.png') no-repeat center;
+    background-size: contain;
+}
+
+//inviteWrap
+.inviteWrap .qr {
+    background: url('../images/qr.png') no-repeat center;
+    background-size: contain;
+}
+
+//wallet
+.walletWrap .deposit_ic {
+    background: url('../images/icon/svg/deposit.svg') no-repeat center;
+    background-size: contain;
+}
+.walletWrap .transfer_ic {
+    background: url('../images/icon/svg/transfer.svg') no-repeat center;
+    background-size: contain;
+}
+.walletWrap .withdrawal_ic {
+    background: url('../images/icon/svg/withdrawal.svg') no-repeat center;
+    background-size: contain;
+}
+.walletWrap .openBtn .db_arrow {
+    background: url('../images/icon/svg/unfold.svg') no-repeat center;
+    background-size: contain;
+}
+.walletWrap .wallet_ic {
+    background: url('../images/icon/walletIC.png') no-repeat;
+    background-size: 200%;
+}
+.walletWrap .arrow_ic {
+    background: url('../images/icon/svg/arrow_1.svg') no-repeat center;
+    background-size: contain;
+}
+
+//vip
+.vipWrap .medal {
+    background: url('../images/medal.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .vip_ic {
+    background: url('../images/icon/vipIC.png') no-repeat center;
+    background-size: contain;
+}
+.vipWrap .arrow_ic {
+    background: url('../images/icon/svg/arrow_1.svg') no-repeat center;
+    background-size: contain;
+}
+
+//card
+.cardWrap .add_ic {
+    background: url('../images/icon/add_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//header
+header .invite_ic {
+    background: url('../images/icon/invite_ic.png') no-repeat center;
+    background-size: contain;
+}
+header .back_arrow {
+    background: url('../images/icon/svg/arrow_1.svg') no-repeat center;
+    background-size: contain;
+}
+
+header .editBtn {
+    background: url('../images/icon/edit.png') no-repeat;
+    background-size: contain;
+}
+header .link_ic {
+    background: url('../images/icon/link.png') no-repeat;
+    background-size: contain;
+}
+
+//marquee
+.marquee_ic i {
+    background: url('../images/icon/marquee_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//operate
+.operate .deposit_ic {
+    background: url("../images/icon/svg/deposit.svg") no-repeat center;
+    background-size: contain;
+}
+.operate .transfer_ic {
+    background: url("../images/icon/svg/transfer.svg") no-repeat center;
+    background-size: contain;
+}
+.operate .withdrawal_ic {
+    background: url("../images/icon/svg/withdrawal.svg") no-repeat center;
+    background-size: contain;
+}
+
+//gameList ic
+.gameList i {
+    background: url('../images/icon/gamesList_ic.png') no-repeat;
+    background-size: 600%;
+}
+
+//footer ic
+footer i {
+    background: url('../images/icon/footer_ic.png') no-repeat;
+    background-size: 500%;
+}
+
+//jumpWindow .close_ic
+
+.jumpWindow .date_ic {
+    background: url('../images/icon/date_ic.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow .line_ic {
+    background: url('../images/icon/line_ic.png') no-repeat;
+    background-size: contain;
+}
+//遊戲轉帳彈窗箭頭
+.jumpWindow.gameWindow .arrow_ic {
+    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
+    background-size: contain;
+}
+
+//loading
+.jumpWindow.loading .img {
+    background: url('../images/icon/svg/loading_b.svg') no-repeat;
+    background-size: 100%;
+}
+
+//遊戲page ic
+.slotHeader li .all_ic {
+    background: url('../images/icon/svg/all.svg') no-repeat;
+    background-size: 100%;
+}
+.slotHeader li.active .all_ic {
+    background: url('../images/icon/svg/all2.svg') no-repeat;
+    background-size: 100%;
+}
+.slotHeader li .hot_ic {
+    background: url('../images/icon/svg/popular.svg') no-repeat;
+    background-size: 100%;
+}
+.slotHeader li.active .hot_ic {
+    background: url('../images/icon/svg/popular2.svg') no-repeat;
+    background-size: 100%;
+}
+.slotHeader li .love_ic {
+    background: url('../images/icon/svg/favorite.svg') no-repeat;
+    background-size: 100%;
+}
+.slotHeader li.active .love_ic {
+    background: url('../images/icon/svg/favorite2.svg') no-repeat;
+    background-size: 100%;
+}
+//slotPage .search_ic
+.slotHeader .search_ic {
+    background: url('../images/icon/svg/search.svg') no-repeat;
+    background-size: 100%;
+}
+//slotPage .gameBox .love
+.slotWrap .gameBox .love {
+    background: url('../images/icon/svg/love1.svg') no-repeat;
+    background-size: 100%;
+}
+.slotWrap .gameBox .love.active {
+    background: url('../images/icon/svg/love2.svg') no-repeat;
+    background-size: 100%;
+}
+
+//event .all_ic
+.eventType .all_ic::before {
+    background: url('../images/icon/svg/entire.svg') no-repeat;
+    background-size: 100%;
+}
+
+//wallet
+
+
+
+
+
+
+
+
+//新增help客服頁ic
+.helpInner .btnBox .line_ic {
+    background: url('../images/icon/svg/line.svg') no-repeat center;
+    background-size: contain;
+}
+.helpInner .upload_ic {
+    background: url('../images/icon/svg/help_upload.svg') no-repeat;
+    background-size: contain;
+}
+
+
+//vip cardBox arrow
+
+
+//card
+
+
+
+
+
+//deposit
+.depositWrap .copy::before {
+    background: url('../images/icon/copy.png') no-repeat;
+    background-size: contain;
+} 
+.depositWrap .card_ic {
+    background: url('../images/icon/svg/card.svg') no-repeat center;
+    background-size: contain;
+}
+.depositWrap .tigerPay_ic {
+    background: url('../images/icon/svg/tigerPay.svg') no-repeat center;
+    background-size: contain;
+}
+.depositWrap .iWallet_ic {
+    background: url('../images/icon/svg/iWallet.svg') no-repeat center;
+    background-size: contain;
+}
+.depositWrap .usdt_ic {
+    background: url('../images/icon/svg/usdt.svg') no-repeat center;
+    background-size: contain;
+}
+.depositWrap .venus_ic {
+    background: url('../images/icon/svg/venus.svg') no-repeat center;
+    background-size: contain;
+}
+.depositWrap .listWrap li.active::after {
+    background: url('../images/icon/check_w.png') no-repeat center;
+    background-size: contain;
+}
+
+//transdrawal
+.transWrap .refresh_ic {
+    background: url('../images/icon/svg/refresh.svg') no-repeat;
+    background-size: 100%;
+}
+.transWrap .openBtn .db_arrow {
+    background: url('../images/icon/svg/unfold.svg') no-repeat;
+    background-size: 100%;
+}
+
+//withdrawal
+.withWrap .refresh_ic {
+    background: url('../images/icon/svg/refresh.svg') no-repeat;
+    background-size: 100%;
+}
+.withWrap .openBtn .db_arrow {
+    background: url('../images/icon/svg/unfold.svg') no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+
+////////img↓
+
+
+//header - logo
+header .logo {
+    height: 80%;
+    object-fit: contain;
+}
+
+//home - 遊戲廠商圖
+.homeCenter .gameBox img {
+    width: 100%;
+    object-fit: contain;
+}
+
+//slotPage - .gameBox img
+.slotWrap .gameBox img {
+    width: 100%;
+    height: 117px;
+    object-fit: contain;
+    border-radius: 5px 5px 0 0;
+}
+
+//eventImg
+.eventList .eventImg {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.eventDetail .eventImg {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+//eventWindow img
+.eventWindow {
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+//help
+.helpInner img {
+    width: 100%;
+    object-fit: contain;
+    margin: 20px 0;
+}

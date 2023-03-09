@@ -1,0 +1,97 @@
+//header
+header {
+    width: 100%;
+    height: auto;
+    background: $header_BG;
+    box-shadow: 0 5px 10px 0 $header_Shadow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .content {
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0 4vw;
+
+        &.index {
+            justify-content: space-between;
+        }
+
+        .inviteBtn {
+            width: auto;
+            height: 4vh;
+            @include header_inviteBtn;
+
+            i {
+                width: 6.5vw;
+                height: 6.5vw;
+                margin-right: 2vw;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        .title {
+            width: 70%;
+            height: auto;
+            color: $mainWord_1;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            @include hiddenText;
+            margin: 0 auto;
+        }
+
+        .back_arrow {
+            width: 6vw;
+            height: 6vw;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4vw;
+        }
+
+        .link_ic,
+        .editBtn {
+            width: 6vw;
+            height: 6vw;
+            position: absolute;
+            right: 4vw;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &.editBtn {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+            }
+        }
+
+        .detailBtn {
+            width: auto;
+            height: 4vh;
+            @include registerBtn;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+        }
+
+        &.helpPage {
+            display: none;
+
+            &.display {
+                display: flex;
+            }
+        }
+    }
+}

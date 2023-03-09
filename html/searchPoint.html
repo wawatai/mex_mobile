@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <p class="title">Consulta de Bono</p>
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--查詢紅利-->
+        <div class="pointWrap">
+            <div class="searchContent">
+                <div class="row">
+                    <p>Fecha</p>
+                    <select>
+                        <option value="">2023/1/1 - 2023/1/7</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <button>Ayer</button>
+                    <button class="active">Hoy</button>
+                    <button>Semana</button>
+                    <button>Mes</button>
+                </div>
+                <button class="check">Consulta</button>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--查看詳情-->
+        <div class="jumpWindow pointWindow">
+            <div class="title">
+                <p>Miembro Lv.1 Detalles</p>
+            </div>
+            <div class="content">
+                <p class="smallTitle">Cuenta de miembro</p>
+                <input type="text" value="mm168">
+            </div>
+            <i class="close"></i>
+        </div>
+    </div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

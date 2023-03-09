@@ -1,0 +1,582 @@
+//主色系
+$BG: #1E183C; //大背景
+
+$mainBG_1: #191433; //內框背景
+$mainBG_2: #151223; //彈窗用內框背景
+$mainBG_3: #1d1838; //彈窗用較淺內框背景
+$mainBG_4: #000000; //最最深背景
+
+$subBG_1: linear-gradient(to bottom,#463F72 0%,#232039 100%);
+
+//內頁背景樣式
+@mixin bgStyle_1 {
+    width: 100%;
+    height: calc(100vh - 96px);
+    overflow-y: auto;
+}
+
+//主要字色
+$mainWord_1: #EDECFF;
+$mainWord_2: #BEBEBE;
+
+$subWord_1: #A4BFFF;
+$subWord_2: #FF7777;
+$subWord_3: #94FFBF;
+
+$mainWord_3: #e2e2e2;
+$mainWord_4: #cd8c2f;
+
+//主要邊框色
+$mainBorder_1: #BEBEBE;
+$mainBorder_2: #A4BFFF;
+
+//金額色
+$money: #ffffff;
+$money_Sp: #e11515;
+
+//可選字色
+$click: #A4BFFF;
+
+//小提示字色
+$remind: #35b751;
+$remind_Sp: #FF3030;
+
+//選擇列字色+選擇列active
+$choose_BG: #262626;
+$choose_ActiveBG: #181818;
+$choose_Word: #ffc13c;
+$choose_ActiveWord: #ff4719;
+
+//彈窗背景透明底
+$filter: #00000096;
+
+//箭頭小提示
+@mixin smallTip {
+    background: #3d3d3d;
+    padding: 6px 18px;
+    color: #cd8c2f;
+    border-radius: 3px;
+    font-size: 3vw;
+    position: relative;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -6px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 4px 6px 4px;
+        border-color: #3d3d3d transparent;
+    }
+}
+
+
+//頁面個別調整
+
+
+//header
+$header_BG: #312B4F;
+$header_Shadow: #00000080;
+@mixin header_inviteBtn {
+    background: linear-gradient(-30deg,#FF29F1 0%,#00B0FF 100%);
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+}
+
+//marquee
+@mixin marquee_ic {
+    background: linear-gradient(to top,#232039 0%,#463F72 100%);
+    border-radius: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//登入頁登入區塊
+$operate_LV_BG: #BA38D2;
+
+//footer
+@mixin footerBG {
+    background: linear-gradient(to bottom,#463F72 0%,#232039 100%);
+    border-radius: 5vw 5vw 0 0;
+    display: flex;
+    align-items: center;
+}
+
+//member
+$member_info_BG: #2C254D;
+$member_sercurity_BG : #3E3470;
+$member_sercurity_HighColor: #00FF00;
+$member_sercurity_MiddleColor: #FFCE0A;
+$member_sercurity_LowColor: #FF7777;
+
+//vip
+$vip_lv_BG: #3D2F6E;
+$vip_lv_ActiveBG: linear-gradient(to bottom,#469FE3 0%,#6140B3 100%);
+
+//card
+$card_empty_Border: #4C547E;
+
+//jumpWindow
+$jumpWindow_BG: #2B2446;
+@mixin closeBtn {
+    background: #202326;
+    border-radius: 50%;
+    border: solid 1px #FFFFFF;
+    position: absolute;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 40%;
+        background: #ffffff;
+        top: 50%;
+        left: 50%;
+    }
+
+    &::before {
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &::after {
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+}
+@mixin registerBtn {
+    background: linear-gradient(to right,#40B372 0%,#2D7BC8 100%);
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0 3vw;
+}
+
+
+
+
+
+
+//mail
+@mixin mailBtn_1 {
+    background: #229890;
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+@mixin mailBtn_2 {
+    background: #DB6161;
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+@mixin mailWrap {
+    background: #181818;
+    border: solid 1px #ffc13c;
+    border-radius: 5px;
+    position: relative;
+
+    &.read {
+        border-color: #a88335;
+        background: #101010;
+
+        .title {
+            color: #cd8c2f;
+        }
+
+        .textBox {
+
+            p,.date {
+                color: #cd8c2f;
+            }
+        }
+    }
+
+    .title {
+        color: #ffc13c;
+    }
+
+    .textBox {
+
+        p {
+            color: #e2e2e2;
+        }
+
+        .date {
+            color: #cd8c2f;
+        }
+    }
+}
+@mixin mailWrap_2 {
+    background: #2e2e2e;
+    border-radius: 5px;
+
+    .title {
+        color: #ffc13c;
+    }
+}
+
+
+//slotPage
+@mixin slotSearch {
+    background: #060606;
+    border: solid 1px #a88335;
+    padding: 4px 10px 4px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+@mixin slotSearch_Input {
+    background: none;
+    border: none;
+    color: #ffc13c;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: #cd8c2f;
+    }
+}
+@mixin slotGameBox {
+    background: #2f2f2f;
+    border-radius: 5px;
+    position: relative;
+    font-size: 0;
+    box-sizing: border-box;
+    padding-bottom: 1.5vw;
+}
+@mixin slotGameBtn_1 {
+    background: #f5951f;
+    border-radius: 5px;
+    font-size: 3vw;
+    color: #000000;
+    font-weight: bold;
+
+    &:active,&.active {
+        background: #fb770a;
+        color: #ffffff;
+    }
+}
+@mixin slotGameBtn_2 {
+    background: #30ebff;
+    border-radius: 5px;
+    font-size: 3vw;
+    color: #000000;
+    font-weight: bold;
+
+    &:active,&.active {
+        background: #0a92be;
+        color: #ffffff;
+    }
+}
+
+//deposit
+@mixin depositBtn {
+    background: #292929;
+    border: solid 1px #ffc13c;
+    border-radius: 5px;
+    color: #ffc13c;
+    font-size: 3.4vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+
+    &.active {
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate(50%,50%) rotate(45deg);
+            background: #ffc13c;
+            width: 8vw;
+            height: 8vw;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0.5vw;
+            bottom: 0.5vw;
+            width: 2.5vw;
+            height: 2.5vw;
+        }
+    }
+}
+
+
+
+//help
+$help_remind: #ff4719;
+$help_box_BG: #2a2a2a;
+$help_box_Border: #979797;
+
+
+//button
+
+
+//常用
+@mixin mainBtn {
+    background: linear-gradient(to right,#52119F 0%,#BD51F4 100%);
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+}
+
+//第二常用
+@mixin secondBtn {
+    background: linear-gradient(to right,#6140B3 0%,#469FE3 100%);
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+}
+
+//第三常用
+@mixin thirdBtn {
+    background: linear-gradient(to bottom,#7368B7 0%,#322B5D 100%);
+    border-radius: 3vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+
+    &:active,&.active {
+        background: linear-gradient(to bottom,#469FE3 0%,#6140B3 100%);
+    }
+}
+//第三常用不同背景
+@mixin thirdBtn_secBG {
+    background: linear-gradient(to bottom,#463F72 0%,#232039 100%);
+    border-radius: 3vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+
+    &:active,&.active {
+        background: linear-gradient(to bottom,#469FE3 0%,#6140B3 100%);
+    }
+}
+
+//第四常用
+@mixin fourthBtn {
+    background: #3D2F6E;
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active,&.active {
+        background: linear-gradient(to right,#6140B3 0%,#469FE3 100%);
+    }
+}
+
+//無背景按鈕常用類
+@mixin noBgBtn_Normal {
+    background: #101010;
+    border-radius: 3px;
+    border: solid 1px #a88335;
+    color: #ffc13c;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active,&.active {
+        background: #ffc13c;
+        border-color: #ffc13c;
+        color: #101010;
+    }
+}
+$help_reBtn_BG: #282828;
+
+
+
+
+
+//假select樣式按鈕
+@mixin fakeSelect {
+    background: #101010;
+    border-radius: 3px;
+    border: solid 1px #ffc13c;
+    color: #ffffff;
+    font-size: 4vw;
+    padding: 0 15px 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // justify-content: space-between;
+    font-weight: bold;
+
+    // i {
+    //     display: block;
+    //     width: 0;
+    //     height: 0;
+    //     border-style: solid;
+    //     border-width: 6px 4px 0 4px;
+    //     border-color: #957222 transparent;
+    // }
+}
+
+button:disabled {
+    background: #808080 !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #EDECFF !important;
+    pointer-events: none;
+}
+
+
+//input
+
+
+@mixin mainInput {
+    background: #483F6E;
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 4vw;
+
+    &::placeholder {
+        color: #EDECFF;
+        font-size: 0.75rem;
+    }
+}
+
+
+//select
+
+
+@mixin mainSelect {
+    background-color: #483F6E;
+    border-radius: 30vw;
+    border: none;
+    background-image: linear-gradient(45deg,transparent 50%,#EDECFF 0),linear-gradient(135deg,#EDECFF 50%,transparent 0);
+    background-position: calc(100% - 20px) calc(1em + 5px),calc(100% - 15px) calc(1em + 5px);
+    background-size: 5px 5px,5px 5px;
+    background-repeat: no-repeat;
+    color: #EDECFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 4vw;
+}
+
+
+//快速套件
+
+
+@mixin hiddenText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@mixin checkBox {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        border: solid 1px #707070;
+        border-radius: 1vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &:checked {
+        
+    }
+}
+@mixin checkBox_2 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: solid 1px #EDECFF;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &:checked {
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            background: #EDECFF;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <p class="title">Historial de apuestas</p>
+            <i class="back_arrow" onclick="window.location.href='./wallet.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--交易紀錄-->
+        <div class="bettingWrap">
+            <div class="recordTop">
+                <ul>
+                    <li class="active">Historial de transacciones</li>
+                    <li onclick="window.location.href='./dealRecord_water.html'">Récord de apuestas totales</li>
+                </ul>
+            </div>
+            <div class="searchContent">
+                <div class="row">
+                    <p>Tipo</p>
+                    <select class="deal">
+                        <option value="1">Depósito</option>
+                        <option value="2">Transferencia / billetera de eventos</option>
+                        <option value="3">Rakeback</option>
+                        <option value="4">Historial de compras de la billetera de actividad</option>
+                        <option value="5">Promoción</option>
+                        <option value="6">Otros</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <p>Fecha</p>
+                    <select>
+                        <option value="">2023/1/1 - 2023/1/7</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <button>Ayer</button>
+                    <button class="active">Hoy</button>
+                    <button>Semana</button>
+                    <button>Mes</button>
+                </div>
+                <button class="check">Consulta</button>
+            </div>
+            <div class="list display">
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>ID de transacción</p>
+                        <p>167540417926516</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>Deposito bancario</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥0.00</p>
+                    </li>
+                    <li>
+                        <p>Estado</p>
+                        <p class="sus">Aprobado</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>ID de transacción</p>
+                        <p>167540417926516</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>Deposito bancario</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥0.00</p>
+                    </li>
+                    <li>
+                        <p>Estado</p>
+                        <p class="fail">Sin aprobar</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>ID de transacción</p>
+                        <p>167540417926516</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>Deposito bancario</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥0.00</p>
+                    </li>
+                    <li>
+                        <p>Estado</p>
+                        <p>En espera de aprobación</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>中心錢包-轉入</p>
+                    </li>
+                    <li>
+                        <p>
+                            Contenido de la
+                            <br>
+                            transacción
+                        </p>
+                        <p>GoldenHero->中心錢包</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥7,031.00</p>
+                    </li>
+                </ul>
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>中心錢包-轉入</p>
+                    </li>
+                    <li>
+                        <p>
+                            Contenido de la
+                            <br>
+                            transacción
+                        </p>
+                        <p>GoldenHero->中心錢包</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥7,031.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Articulo</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥7,031.00</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>Nombre de la actividad</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Puntos de cambio</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Estado</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Nombre de la actividad</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥0.00</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="dealBox display">
+                    <li>
+                        <p>Hora</p>
+                        <p>2023-02-04 13:03:37</p>
+                    </li>
+                    <li>
+                        <p>Tipo</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <p>Monto</p>
+                        <p>¥0.00</p>
+                    </li>
+                    <li>
+                        <p>Observaciones</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>

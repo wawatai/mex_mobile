@@ -1,0 +1,259 @@
+//我的錢包
+.walletWrap {
+    width: 100%;
+    height: auto;
+
+    //上半
+    .walletBox {
+        width: 100%;
+        height: auto;
+        padding: 4vw 3vw;
+        margin-bottom: 7vw;
+
+        //上視窗
+        .content {
+            width: 100%;
+            height: auto;
+            background: $subBG_1;
+            border-radius: 3vw;
+            margin: 0 auto 5vw;
+
+            //總額顯示
+            .amount {
+                width: 100%;
+                height: auto;
+                display: flex;
+                margin-bottom: 4vw;
+
+                .half {
+                    width: auto;
+                    height: auto;
+                    padding: 4vw 0 0 4vw;
+
+                    &:first-child {
+                        margin-right: 8vw;
+                    }
+
+                    .title {
+                        color: $mainWord_1;
+                        font-size: 0.75rem;
+                        font-weight: bold;
+                        margin-bottom: 5vw;
+                    }
+
+                    .money {
+                        color: $mainWord_1;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            //限制
+            .details {
+                width: 100%;
+                height: auto;
+                padding: 4vw;
+                
+                p {
+                    color: $mainWord_1;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+
+                    span {
+                        color: $subWord_2;
+                        margin-left: 3vw;
+                    }
+                }
+            }
+        }
+
+        //轉存提
+        ul {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10vw;
+
+            li {
+                width: 14vw;
+                height: 14vw;
+                @include secondBtn;
+                position: relative;
+
+                i {
+                    width: 9vw;
+                    height: 9vw;
+                    flex-shrink: 0;
+
+                    &.transfer_ic {
+                        margin-top: 0.5vw;
+                    }
+                }
+
+                p {
+                    color: $mainWord_1;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -5vw;
+                }
+            }
+        }
+    }
+
+    //錢包列
+    .walletList {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4vw;
+
+        .title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5vw;
+            margin-bottom: 3vw;
+
+            div {
+                width: auto;
+                height: auto;
+
+                p {
+                    color: $mainWord_2;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+
+                    &:last-child {
+                        color: $mainWord_1;
+                        margin-top: 1vw;
+                    }
+                }
+            }
+
+            button {
+                width: auto;
+                height: 11vw;
+                @include mainBtn;
+                transform: scale(0.8);
+                transform-origin: right;
+            }
+        }
+
+        ul {
+            width: 100%;
+            height: 30vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2vw;
+            overflow: hidden;
+            padding: 0 3vw;
+
+            &.active {
+                height: auto;
+            }
+
+            li {
+                width: auto;
+                height: 8.5vh;
+                background: $mainBG_1;
+                border: solid 1px $mainBorder_2;
+                border-radius: 3vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                overflow: hidden;
+                padding: 0 3vw;
+
+                p {
+                    color: $mainWord_1;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    @include hiddenText;
+
+                    &.smallTitle {
+                        color: $mainWord_2;
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+
+        .openBtn {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4vw;
+
+            p {
+                display: none;
+                color: $mainWord_1;
+                font-size: 1rem;
+                font-weight: bold;
+                align-items: center;
+                justify-content: center;
+
+                &.display {
+                    display: flex;
+                }
+
+                .db_arrow {
+                    width: 4vw;
+                    height: 4vw;
+                    margin-left: 2vw;
+
+                    &.active {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    //選項條
+    .optionBox {
+        width: 100%;
+        height: auto;
+        padding: 0 4vw;
+
+        li {
+            width: 100%;
+            height: 11vw;
+            @include thirdBtn_secBG;
+            justify-content: space-between;
+            padding: 0 5vw;
+            margin: 0 auto 4vw;
+    
+            p {
+                display: flex;
+                align-items: center;
+
+                i {
+                    width: 7vw;
+                    height: 7vw;
+                    margin-right: 5vw;
+        
+                    &.betting {
+                        background-position-x: 0;
+                    }
+                    &.deal {
+                        background-position-x: 100%;
+                    }
+                }
+            }
+    
+            .arrow_ic {
+                width: 4vw;
+                height: 4vw;
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

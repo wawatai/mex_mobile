@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <div class="title">Vincular tarjeta bancaria</div>
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <div class="cardWrap">
+            <!--銀行卡-->
+            <div class="cardList">
+                <p class="title">
+                    Número de tarjetas <span>0</span> / 3
+                </p>
+                <ul>
+                    <li class="empty">
+                        <i class="add_ic"></i>
+                        <p class="empty_word">
+                            Por favor, vincule una tarjeta
+                            <br>
+                            bancaria para el retiro
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--內容-->
+            <div class="cardContent">
+                <ul>
+                    <li>
+                        <p class="title">Tipo de tarjeta bancaria</p>
+                        <select>
+                            <option value="">Tarjeta bancaria</option>
+                        </select>
+                    </li>
+                    <ol class="card display">
+                        <li>
+                            <p class="title">Nombre del banco</p>
+                            <input type="text">
+                            <p class="remind">Haga clic en el menú para completar la información del nombre del banco para asegurarse de que la información es correcta</p>
+                        </li>
+                        <li>
+                            <p class="title">Nombre de la sucursal</p>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <p class="title">Nombre de la cuenta</p>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <p class="title">Cuenta bancaria</p>
+                            <input type="text">
+                            <p class="remind">Por favor, confirme su cuenta bancaria cuidadosamente. ¡error de la cuenta no podrá retirar!</p>
+                        </li>
+                        <li>
+                            <p class="title">Confirmar cuenta</p>
+                            <input type="text">
+                            <p class="remind">Por favor, confirme su cuenta bancaria cuidadosamente. ¡error de la cuenta no podrá retirar!</p>
+                        </li>
+                    </ol>
+                    <button>Consulta</button>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <span></span>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <span></span>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter display">
+        <div class="jumpWindow plsGo display">
+            <div class="title">
+                <p>Tips</p>
+            </div>
+            <div class="content">
+                <p>
+                    Sin verificar, por favor, vaya al perfil para enlazar
+                    <br>
+                    la información personal
+                </p>
+                <button class="close">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+</html>
