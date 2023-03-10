@@ -121,6 +121,13 @@ $(function(){
         .addClass('display');
     })
 
+    $(".callBet").click(function(){
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.gameWindow')
+        .addClass('display');
+    })
+
 
     $(".transWrap .check").click(function(){
         $('.jumpWindow').removeClass('display');
@@ -296,46 +303,28 @@ $(function(){
     })
 })
 
-
-
-
-
-
-
-
-//realLogin
-
-
-function callFish() {
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.gameWindow.fish').addClass('display');
-}
-function callLottery() {
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.gameWindow.lottery').addClass('display');
-}
-function callBoard() {
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.gameWindow.board').addClass('display');
-}
-function callSlot() {
-    $('.jumpWindow').removeClass('display');
-    $('.filter,.gameWindow.slot').addClass('display');
-}
-
-//slotPage .gameBox .love
+//slotPage
 $(function(){
     $('.slotWrap .gameBox .love').click(function(){
-        $(this).toggleClass('active');
+        $(this)
+        .toggleClass('active');
     })
-})
-//slotPage .slotHeader切換
-$(function(){
+
     $('.slotHeader .listBox li').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
+        $(this)
+        .addClass('active')
+        .siblings().removeClass('active');
     })
 })
+
+
+
+
+
+
+
+
+
 
 
 
