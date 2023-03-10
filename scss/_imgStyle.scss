@@ -93,13 +93,8 @@ header .back_arrow {
     background: url('../images/icon/svg/arrow_1.svg') no-repeat center;
     background-size: contain;
 }
-
 header .editBtn {
     background: url('../images/icon/edit.png') no-repeat;
-    background-size: contain;
-}
-header .link_ic {
-    background: url('../images/icon/link.png') no-repeat;
     background-size: contain;
 }
 
@@ -135,59 +130,21 @@ footer i {
     background-size: 500%;
 }
 
-//jumpWindow .close_ic
-
-.jumpWindow .date_ic {
-    background: url('../images/icon/date_ic.png') no-repeat;
+//help
+.helpInner .upload_ic {
+    background: url('../images/icon/svg/help_upload.svg') no-repeat center;
     background-size: contain;
 }
-.jumpWindow .line_ic {
-    background: url('../images/icon/line_ic.png') no-repeat;
-    background-size: contain;
-}
-//遊戲轉帳彈窗箭頭
-.jumpWindow.gameWindow .arrow_ic {
-    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
+.helpInner .btnBox .line_ic {
+    background: url('../images/icon/svg/line.svg') no-repeat center;
     background-size: contain;
 }
 
-//loading
-.jumpWindow.loading .img {
-    background: url('../images/icon/svg/loading_b.svg') no-repeat;
-    background-size: 100%;
-}
-
-//遊戲page ic
-.slotHeader li .all_ic {
-    background: url('../images/icon/svg/all.svg') no-repeat;
-    background-size: 100%;
-}
-.slotHeader li.active .all_ic {
-    background: url('../images/icon/svg/all2.svg') no-repeat;
-    background-size: 100%;
-}
-.slotHeader li .hot_ic {
-    background: url('../images/icon/svg/popular.svg') no-repeat;
-    background-size: 100%;
-}
-.slotHeader li.active .hot_ic {
-    background: url('../images/icon/svg/popular2.svg') no-repeat;
-    background-size: 100%;
-}
-.slotHeader li .love_ic {
-    background: url('../images/icon/svg/favorite.svg') no-repeat;
-    background-size: 100%;
-}
-.slotHeader li.active .love_ic {
-    background: url('../images/icon/svg/favorite2.svg') no-repeat;
-    background-size: 100%;
-}
-//slotPage .search_ic
+//slotPage
 .slotHeader .search_ic {
     background: url('../images/icon/svg/search.svg') no-repeat;
     background-size: 100%;
 }
-//slotPage .gameBox .love
 .slotWrap .gameBox .love {
     background: url('../images/icon/svg/love1.svg') no-repeat;
     background-size: 100%;
@@ -197,13 +154,6 @@ footer i {
     background-size: 100%;
 }
 
-//event .all_ic
-.eventType .all_ic::before {
-    background: url('../images/icon/svg/entire.svg') no-repeat;
-    background-size: 100%;
-}
-
-//wallet
 
 
 
@@ -212,31 +162,27 @@ footer i {
 
 
 
-//新增help客服頁ic
-.helpInner .btnBox .line_ic {
-    background: url('../images/icon/svg/line.svg') no-repeat center;
-    background-size: contain;
-}
-.helpInner .upload_ic {
-    background: url('../images/icon/svg/help_upload.svg') no-repeat;
-    background-size: contain;
-}
 
 
-//vip cardBox arrow
 
 
-//card
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 //deposit
-.depositWrap .copy::before {
-    background: url('../images/icon/copy.png') no-repeat;
-    background-size: contain;
-} 
+
 .depositWrap .card_ic {
     background: url('../images/icon/svg/card.svg') no-repeat center;
     background-size: contain;
@@ -257,10 +203,7 @@ footer i {
     background: url('../images/icon/svg/venus.svg') no-repeat center;
     background-size: contain;
 }
-.depositWrap .listWrap li.active::after {
-    background: url('../images/icon/check_w.png') no-repeat center;
-    background-size: contain;
-}
+
 
 //transdrawal
 .transWrap .refresh_ic {
@@ -305,47 +248,24 @@ header .logo {
 //slotPage - .gameBox img
 .slotWrap .gameBox img {
     width: 100%;
-    height: 117px;
     object-fit: contain;
-    border-radius: 5px 5px 0 0;
 }
 
 //eventImg
-.eventList .eventImg {
+.eventList .eventImg img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        object-fit: contain;
-    }
-}
-.eventDetail .eventImg {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        object-fit: contain;
-    }
+    object-fit: contain;
 }
 
 //eventWindow img
-.eventWindow {
-
-    img {
-        width: 100%;
-        height: auto;
-    }
+.eventWindow img {
+    width: 100%;
+    object-fit: contain;
 }
 
 //help
 .helpInner img {
     width: 100%;
     object-fit: contain;
-    margin: 20px 0;
+    margin: 4vw 0;
 }

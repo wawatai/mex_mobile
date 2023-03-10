@@ -2,59 +2,46 @@
 .eventType {
     width: 100%;
     height: auto;
-    overflow-x: auto;
-    background: $choose_BG;
 
     ul {
+        width: 100%;
+        height: auto;
         display: flex;
+        overflow-x: auto;
 
         li {
             width: auto;
-            height: 72px;
+            height: 11vw;
+            color: $mainWord_1;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            box-sizing: border-box;
-            padding: 0 5px;
+            justify-content: center;
+            position: relative;
+            opacity: 0.4;
+            flex-shrink: 0;
+            padding: 0 6vw;
+
+            &::before {
+                display: none;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.5vw;
+                background: $mainBorder_1;
+                border-radius: 30vw;
+                left: 0;
+                bottom: 0;
+            }
 
             &:active,&.active {
-                background: $choose_ActiveBG;
-
-                .all_ic {
-
-                    &::before {
-                        top: -6vw;
-                        filter: drop-shadow(0 6vw 0 #ff4719);
-                    }
-                }
-
-                p {
-                    color: $choose_ActiveWord;
-                }
-            }
-
-            .all_ic {
-                width: 6vw;
-                height: 6vw;
-                margin-bottom: 8px;
-                position: relative;
-                overflow: hidden;
+                opacity: 1;
 
                 &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    left: 0;
-                    top: 0;
+                    display: block;
                 }
-            }
-
-            p {
-                color: $choose_Word;
-                font-size: 2vw;
-                font-weight: bold;
             }
         }
     }
@@ -63,15 +50,12 @@
 //優惠列表
 .eventList {
     width: 100%;
-    height: calc(100vh - 168px);
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 24px 16px;
-    background: $mainBG_1;
+    height: auto;
 
     ul {
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 4vw;
 
         li {
             width: 100%;
@@ -82,40 +66,41 @@
                 margin: 0;
             }
 
+            .eventImg {
+                width: 100%;
+                height: auto;
+                border-radius: 3vw;
+                overflow: hidden;
+            }
+
             .eventBox {
                 width: 100%;
                 height: auto;
-                background: $mainBG_2;
-                border-radius: 1.5vw;
+                background: $mainBG_4;
+                border-radius: 3vw;
                 overflow: hidden;
-                box-sizing:  border-box;
-                padding: 5px 5px 0;
+                padding: 2vw 2vw 0;
 
                 p {
                     width: 100%;
-                    height: 36px;
+                    height: 9vw;
                     display: flex;
                     align-items: center;
-                    box-sizing: border-box;
-                    padding: 0 10px;
+                    padding: 0 3vw;
                     justify-content: space-between;
 
                     span {
-                        display: inline-block;
                         width: 72%;
                         color: $mainWord_1;
-                        font-size: 3.4vw;
+                        font-size: 0.85rem;
                         font-weight: bold;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
+                        @include hiddenText;
                     }
 
                     button {
-                        width: 78px;
-                        height: 23px;
+                        width: 18vw;
+                        height: 7vw;
                         @include mainBtn;
-                        font-size: 2vw;
                     }
                 }
             }
@@ -126,66 +111,34 @@
 //優惠內頁
 .eventDetail {
     width: 100%;
-    height: calc(100vh - 110px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 15px;
-    background: $mainBG_1;
-    overflow-y: auto;
+    height: auto;
+    padding: 4vw;
 
-    .eventImg {
-        box-sizing: border-box;
-        padding: 5px;
-        flex-shrink: 0;
-    }
-
-    .detailContent {
+    .outerBox {
         width: 100%;
         height: auto;
-        box-sizing: border-box;
-        padding: 10px 8px;
-        border-radius: 5px;
-
-        ul {
-            background: $mainBG_2;
-            border-radius: 5px;
-            padding: 16px;
-
-            li {
-                margin-bottom: 20px;
-
-                &.title {
-                    
-                    p {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: $mainWord_1;
-                        font-size: 4vw;
-                    }
-                }
-
-                p {
-                    color: $mainWord_3;
-                    font-size: 3.7vw;
-                    font-weight: bold;
-                    line-height: 4.5vw;
-
-                    &.remind {
-                        color: $remind;
-                    }
-                }
-            }
-        }
-
-        .contentFooter {
+        background: $mainBG_1;
+        border-radius: 3vw;
+        border: solid 1px $mainBorder_1;
+        padding: 0 4vw 4vw;
+    
+        .title {
             width: 100%;
-            height: auto;
+            height: 9vh;
+            color: $mainWord_1;
+            font-size: 1.2rem;
+            font-weight: bold;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px 0;
+        }
+
+        p:not(.title) {
+            color: $mainWord_1;
+            font-size: 0.85rem;
+            font-weight: bold;
+            line-height: 1.2rem;
+            word-break: break-all;
         }
     }
 }

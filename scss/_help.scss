@@ -1,7 +1,8 @@
 //幫助中心外層
 .helpWrap {
-    @include bgStyle_1;
     display: none;
+    width: 100%;
+    height: auto;
 
     &.display {
         display: block;
@@ -10,34 +11,32 @@
     //開頭選單
     .helpHeader {
         width: 100%;
-        height: 70px;
+        height: 9vh;
+        border-bottom: solid 1px $mainBorder_1;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-sizing: border-box;
-        border-bottom: solid 1px $mainBorder_1;
 
         .selectBox {
-            width: 92.27vw;
-            height: 42px;
-            box-sizing: border-box;
-            padding-left: 15px;
+            width: 92%;
+            height: 11vw;
+            background: $subBG_1;
+            border-radius: 2vw;
             display: flex;
             align-items: center;
-            background: $mainBG_2;
             position: relative;
-            border-radius: 5px;
+            padding-left: 4vw;
 
             p {
                 color: $mainWord_1;
-                font-size: 4vw;
+                font-size: 1rem;
                 font-weight: bold;
             }
 
             &::before {
                 content: "";
                 position: absolute;
-                right: 20px;
+                right: 4vw;
                 width: 0;
                 height: 0;
                 border-style: solid;
@@ -46,16 +45,16 @@
             }
 
             select {
+                width: 100%;
+                height: 100%;
+                color: $mainWord_1;
+                font-weight: bold;
+                font-size: 0.85rem;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
-                height: 100%;
                 opacity: 0;
-                padding-left: 15px;
-                color: $mainWord_1;
-                font-weight: bold;
-                font-size: 14px;
+                padding-left: 4vw;
 
                 option {
                     background: $mainBG_2;
@@ -67,27 +66,25 @@
     //內容
     .helpBody {
         width: 100%;
-        height: calc(100vh - 164px);
-        overflow-y: auto;
+        height: auto;
 
         ul {
             width: 100%;
             height: auto;
-            box-sizing: border-box;
-            padding: 15px 4vw;
+            padding: 4vw;
 
             li {
                 width: 100%;
-                height: 42px;
+                height: 11vw;
+                background: $subBG_1;
+                border-radius: 2vw;
+                color: $mainWord_1;
+                font-size: 0.85rem;
+                font-weight: bold;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: $mainBG_2;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                color: $mainWord_1;
-                font-size: 4vw;
-                font-weight: bold;
+                margin-bottom: 4vw;
             }
         }
     }
@@ -95,8 +92,9 @@
 
 //幫助中心內層
 .helpInner {
-    @include bgStyle_1;
     display: none;
+    width: 100%;
+    height: auto;
 
     &.display {
         display: block;
@@ -114,20 +112,19 @@
         li {
             width: 100%;
             height: auto;
-            box-sizing: border-box;
-            padding: 16px;
+            padding: 4vw;
 
             p {
-                color: $mainWord_3;
-                font-size: 3.7vw;
+                color: $mainWord_1;
+                font-size: 0.85rem;
                 font-weight: bold;
-                line-height: 22px;
-                margin-bottom: 8px;
+                line-height: 1.2rem;
+                margin-bottom: 2vw;
 
                 &.smallTitle {
-                    font-size: 4.5vw;
-                    margin: 10px 0;
-                    color: $mainWord_1;
+                    color: $subWord_1;
+                    font-size: 1.2rem;
+                    margin: 3vw 0;
 
                     &:first-child {
                         margin-top: 0;
@@ -135,16 +132,15 @@
                 }
 
                 &.secondTitle {
-                    color: $mainWord_4;
+                    color: $remind_Sp;
                 }
 
                 a {
-                    color: $click;
-                    text-decoration: none;
+                    color: $subWord_3;
                 }
 
                 .remind {
-                    color: $help_remind;
+                    color: $subWord_2;
                 }
             }
 
@@ -155,54 +151,48 @@
                 .box {
                     width: 100%;
                     height: auto;
-                    background: $help_box_BG;
-                    border-radius: 5px;
-                    border: dashed 3px $help_box_Border;
+                    background: $mainBG_1;
+                    border-radius: 5vw;
+                    border: dashed 3px $mainBorder_2;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    padding: 45px 0;
-                    box-sizing: border-box;
+                    padding: 9vw 0;
 
                     &:nth-of-type(1) {
-                        margin-bottom: 16px;
+                        margin-bottom: 4vw;
                     }
 
                     i {
-                        width: 52px;
-                        height: 49px;
-                        margin-bottom: 10px;
+                        width: 13vw;
+                        height: 13vw;
+                        margin-bottom: 4vw;
                     }
 
                     button {
                         width: auto;
-                        height: 36px;
+                        height: 11vw;
                         @include mainBtn;
-                        padding: 0 10px;
-                        margin: 16px 0;
+                        margin-bottom: 4vw;
                     }
-
-                    .remind {
-                        font-size: 2vw;
+                    
+                    p {
                         margin: 0;
                     }
                 }
 
                 .sendBtn {
                     width: 70vw;
-                    height: 36px;
+                    height: 11vw;
                     @include mainBtn;
-                    display: block;
-                    margin: 20px auto 10px;
+                    margin: 5vw auto 2vw;
                 }
 
                 .reBtn {
                     width: 70vw;
-                    height: 36px;
-                    @include noBgBtn_Normal;
-                    background: $help_reBtn_BG;
-                    display: block;
+                    height: 11vw;
+                    @include secondBtn;
                     margin: 0 auto;
                 }
             }
@@ -210,51 +200,41 @@
             .btnBox {
                 width: 100%;
                 height: auto;
-                margin: 20px 0;
+                margin: 5vw 0;
 
                 .btn {
                     width: 100%;
-                    height: 105px;
-                    background: $mainBG_2;
-                    border-radius: 16px;
+                    height: 26vw;
+                    background: $subBG_1;
+                    border-radius: 5vw;
                     display: flex;
                     align-items: center;
-                    box-sizing: border-box;
-                    padding: 10px 16px;
+                    padding: 0 4vw;
 
                     i {
-                        display: block;
                         width: 8.7vw;
                         height: 8.7vw;
-                        margin-right: 16px;
+                        margin-right: 4vw;
                         flex-shrink: 0;
                     }
 
                     p {
-                        font-size: 3.4vw;
-                        font-weight: bold;
                         margin: 0;
-                        color: $mainWord_1;
 
                         &:nth-of-type(1) {
-                            font-size: 5vw;
+                            font-size: 1.2rem;
                         }
+
                         &:nth-of-type(2) {
-                            color: $mainWord_4;
+                           color: $mainWord_2;
                         }
                     }
                 }
             }
 
-            .downloadBtn {
-                width: 100%;
-                height: 42px;
-                @include mainBtn;
-            }
-
             hr {
                 border-color: $mainBorder_1;
-                margin: 40px 0;
+                margin: 9vh 0;
             }
         }
     }

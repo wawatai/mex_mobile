@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
 </head>
@@ -18,8 +14,8 @@
     <header>
         <!--content-->
         <div class="content helpPage display">
+            <div class="title">Centro de ayuda</div>
             <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
-            <div class="title">初心者ガイド</div>
         </div>
         <div class="content helpPage q1">
             <i class="back_arrow" onclick="backToPage()"></i>
@@ -33,13 +29,13 @@
             <!--開頭選單-->
             <div class="helpHeader">
                 <div class="selectBox">
-                    <p>初心者ガイド</p>
+                    <p>Centro de ayuda</p>
                     <i class="arrow_ic"></i>
                     <select onchange="window.location.href=this.options[this.selectedIndex].value">
                         <option value="" disabled>選んでください</option>
-                        <option value="./help_new.html" selected>初心者ガイド</option>
+                        <option value="./help_new.html" selected>Centro de ayuda</option>
                         <option value="./help_often.html">よくある質問</option>
-                        <option value="./help_about.html">当社について</option>
+                        <option value="./help_about.html">Sobre nosotros</option>
                     </select>
                 </div>
             </div>
@@ -77,17 +73,13 @@
                         <div class="box">
                             <i class="upload_ic"></i>
                             <button>ファイルを選択</button>
-                            <p>
-                                <span class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</span>
-                            </p>
+                            <p>2MB以下のpng.jpeg形式のファイルが利用できます</p>
                         </div>
                         <p>裏面</p>
                         <div class="box">
                             <i class="upload_ic"></i>
                             <button>ファイルを選択</button>
-                            <p>
-                                <span class="remind">2MB以下のpng.jpeg形式のファイルが利用できます</span>
-                            </p>
+                            <p>2MB以下のpng.jpeg形式のファイルが利用できます</p>
                         </div>
                         <button class="sendBtn">送信</button>
                         <button class="reBtn">キャンセル</button>
@@ -135,39 +127,29 @@
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
                 <i class="menu_ic"></i>
-                <p>ホーム</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./event.html'">
                 <i class="event_ic"></i>
-                <p>プロモーション</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./wallet.html'">
                 <i class="wallet_ic"></i>
-                <p>ウォレット</p>
+                <span></span>
             </li>
-            <li class="active" onclick="window.location.href='./help_often_contact.html'">
+            <li onclick="window.location.href='./help_often_contact.html'">
                 <i class="service_ic"></i>
-                <p>カスタマーサービス</p>
+                <span></span>
             </li>
-            <li onclick="window.location.href='./member.html'">
-                <i class="center_ic"></i>
-                <p>マイページ</p>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
             </li>
         </ul>
     </footer>
     <!--彈窗-->
-    <div class="filter">
-        <div class="jumpWindow plsGo">
-            <div class="title">
-                ヒント
-                <i class="close"></i>
-            </div>
-            <div class="content">
-                <p>申し込み完了。KYC審査中です。</p>
-                <button class="close">確認</button>
-            </div>
-        </div>
-    </div>
+    <div class="filter"></div>
+    <!--背景-->
     <div class="bg"></div>
 </body>
 </html>

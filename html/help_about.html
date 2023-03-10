@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
 </head>
@@ -18,12 +16,12 @@
     <header>
         <!--content-->
         <div class="content helpPage display">
+            <p class="title">Sobre nosotros</p>
             <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
-            <div class="title">当社について</div>
         </div>
         <div class="content helpPage q1">
             <i class="back_arrow" onclick="backToPage()"></i>
-            <div class="title">当社について</div>
+            <div class="title">Sobre nosotros</div>
         </div>
         <div class="content helpPage q2">
             <i class="back_arrow" onclick="backToPage()"></i>
@@ -49,13 +47,13 @@
             <!--開頭選單-->
             <div class="helpHeader">
                 <div class="selectBox">
-                    <p>当社について</p>
+                    <p>Sobre nosotros</p>
                     <i class="arrow_ic"></i>
                     <select onchange="window.location.href=this.options[this.selectedIndex].value">
                         <option value="" disabled>選んでください</option>
-                        <option value="./help_new.html">初心者ガイド</option>
+                        <option value="./help_new.html">Centro de ayuda</option>
                         <option value="./help_often.html">よくある質問</option>
-                        <option value="./help_about.html" selected>当社について</option>
+                        <option value="./help_about.html" selected>Sobre nosotros</option>
                     </select>
                 </div>
             </div>
@@ -388,28 +386,29 @@
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
                 <i class="menu_ic"></i>
-                <p>ホーム</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./event.html'">
                 <i class="event_ic"></i>
-                <p>プロモーション</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./wallet.html'">
                 <i class="wallet_ic"></i>
-                <p>ウォレット</p>
+                <span></span>
             </li>
-            <li class="active" onclick="window.location.href='./help_often_contact.html'">
+            <li onclick="window.location.href='./help_often_contact.html'">
                 <i class="service_ic"></i>
-                <p>カスタマーサービス</p>
+                <span></span>
             </li>
-            <li onclick="window.location.href='./member.html'">
-                <i class="center_ic"></i>
-                <p>マイページ</p>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="member_ic"></i>
+                <span></span>
             </li>
         </ul>
     </footer>
     <!--彈窗-->
     <div class="filter"></div>
+    <!--背景-->
     <div class="bg"></div>
 </body>
 </html>

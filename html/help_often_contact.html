@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
 </head>
@@ -17,7 +13,8 @@
     <!--header-->
     <header>
         <div class="content helpPage q3 display">
-            <div class="title">ライブチャット</div>
+            <p class="title">ライブチャット</p>
+            <i class="back_arrow" onclick="window.location.href='./index_inner.html'"></i>
         </div>
     </header>
     <!--main-->
@@ -51,27 +48,29 @@
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
                 <i class="menu_ic"></i>
-                <p>ホーム</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./event.html'">
                 <i class="event_ic"></i>
-                <p>プロモーション</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./wallet.html'">
                 <i class="wallet_ic"></i>
-                <p>ウォレット</p>
+                <span></span>
             </li>
             <li class="active" onclick="window.location.href='./help_often_contact.html'">
                 <i class="service_ic"></i>
-                <p>カスタマーサービス</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./member.html'">
-                <i class="center_ic"></i>
-                <p>マイページ</p>
+                <i class="member_ic"></i>
+                <span></span>
             </li>
         </ul>
     </footer>
     <!--彈窗-->
     <div class="filter"></div>
+    <!--背景-->
+    <div class="bg"></div>
 </body>
 </html>

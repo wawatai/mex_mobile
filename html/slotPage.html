@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/NJLOGO_64x64.ico" type="image/x-icon">
 </head>
@@ -18,8 +14,8 @@
     <header>
         <!--content-->
         <div class="content">
+            <p class="title">slotGame</p>
             <i class="back_arrow" onclick="window.location.href='./index_inner.html'"></i>
-            <div class="title">slotGame</div>
         </div>
     </header>
     <!--main-->
@@ -31,135 +27,71 @@
                 <!--選單-->
                 <div class="listBox">
                     <ul>
-                        <li class="active">
-                            <i class="all_ic"></i>
-                            全て
-                        </li>
-                        <li>
-                            <i class="hot_ic"></i>
-                            人気ゲーム
-                        </li>
-                        <li>
-                            <i class="love_ic"></i>
-                            お気に入り
-                        </li>
+                        <li class="active">Todo</li>
+                        <li>Los mejores juegos</li>
+                        <li>Mis favoritos</li>
                     </ul>
                 </div>
                 <!--搜尋列-->
                 <div class="searchBox">
                     <i class="search_ic"></i>
-                    <input type="text" placeholder="ゲーム検索">
+                    <input type="text" placeholder="Búsqueda de juegos">
                 </div>
             </div>
             <!--slot遊戲列-->
             <div class="gameList">
                 <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_1.png">
-                    <p>
-                        <span>Wizards Want War!</span>
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
                         <button class="love"></button>
-                    </p>
+                    </div>
                     <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
+                        <button class="enter callBet">Play</button>
                         <button class="try">Try It!</button>
                     </div>
                 </div>
                 <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_2.png">
-                    <p>
-                        <span>Colossal Gems</span>
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
                         <button class="love"></button>
-                    </p>
+                    </div>
                     <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
+                        <button class="enter callBet">Play</button>
                         <button class="try">Try It!</button>
                     </div>
                 </div>
                 <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_3.png">
-                    <p>
-                        <span>Nuwa</span>
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
                         <button class="love"></button>
-                    </p>
+                    </div>
                     <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
+                        <button class="enter callBet">Play</button>
                         <button class="try">Try It!</button>
                     </div>
                 </div>
                 <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_4.png">
-                    <p>
-                        <span>Wild Trucks</span>
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
                         <button class="love"></button>
-                    </p>
+                    </div>
                     <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
+                        <button class="enter callBet">Play</button>
                         <button class="try">Try It!</button>
                     </div>
                 </div>
                 <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_5.png">
-                    <p>
-                        <span>Lucky Lucky</span>
+                    <img src="../images/partner/gameImg.png">
+                    <div class="textBox">
+                        <p>Wizards Want War!</p>
                         <button class="love"></button>
-                    </p>
-                    <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
-                        <button class="try">Try It!</button>
                     </div>
-                </div>
-                <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_6.png">
-                    <p>
-                        <span>Magic Oak</span>
-                        <button class="love"></button>
-                    </p>
                     <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
-                        <button class="try">Try It!</button>
-                    </div>
-                </div>
-                <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_7.png">
-                    <p>
-                        <span>Mount Mazuma</span>
-                        <button class="love"></button>
-                    </p>
-                    <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
-                        <button class="try">Try It!</button>
-                    </div>
-                </div>
-                <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_8.png">
-                    <p>
-                        <span>5 Lucky Lions</span>
-                        <button class="love"></button>
-                    </p>
-                    <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
-                        <button class="try">Try It!</button>
-                    </div>
-                </div>
-                <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_9.png">
-                    <p>
-                        <span>Hot Hot Fruit</span>
-                        <button class="love"></button>
-                    </p>
-                    <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
-                        <button class="try">Try It!</button>
-                    </div>
-                </div>
-                <div class="gameBox">
-                    <img src="../images/partner/slot/gameImg_10.png">
-                    <p>
-                        <span>Happiest Christmas Tree</span>
-                        <button class="love"></button>
-                    </p>
-                    <div class="btnBox">
-                        <button class="enter" onclick="callSlot()">ゲームに入る</button>
+                        <button class="enter callBet">Play</button>
                         <button class="try">Try It!</button>
                     </div>
                 </div>
@@ -171,53 +103,41 @@
         <ul>
             <li onclick="window.location.href='./index_inner.html'">
                 <i class="menu_ic"></i>
-                <p>ホーム</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./event.html'">
                 <i class="event_ic"></i>
-                <p>プロモーション</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./wallet.html'">
                 <i class="wallet_ic"></i>
-                <p>ウォレット</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./help_often_contact.html'">
                 <i class="service_ic"></i>
-                <p>カスタマーサービス</p>
+                <span></span>
             </li>
             <li onclick="window.location.href='./member.html'">
-                <i class="center_ic"></i>
-                <p>マイページ</p>
+                <i class="member_ic"></i>
+                <span></span>
             </li>
         </ul>
     </footer>
     <!--彈窗-->
     <div class="filter">
-        <!--棋牌彈窗-->
-        <div class="jumpWindow gameWindow slot">
+        <!--投注彈窗-->
+        <div class="jumpWindow gameWindow">
             <div class="title">
-                <p>クイック振替</p>
-                <i class="close"></i>
+                <p>SLOT GAME</p>
             </div>
             <form>
                 <div class="row">
-                    <p class="smallTitle">プラットホーム</p>
-                    <p class="gameName">Wizards Want War!</p>
+                    <p class="smallTitle">billetera principal</p>
+                    <p class="money">$1000</p>
                 </div>
                 <div class="row">
-                    <p class="smallTitle">メインウォレット</p>
-                    <input type="text" value="¥0.00" disabled>
-                </div>
-                <div class="row">
-                    <i class="arrow_ic"></i>
-                </div>
-                <div class="row">
-                    <p class="smallTitle">Wizards Want War!</p>
-                    <input type="text" value="¥0.00" disabled>
-                </div>
-                <div class="row">
-                    <p class="smallTitle">振替金額</p>
-                    <input type="text" value="0">
+                    <p class="smallTitle">Contraseña</p>
+                    <input type="text" value="$0.00" disabled>
                 </div>
                 <div class="row btnBox">
                     <button type="button">¥100</button>
@@ -228,12 +148,21 @@
                     <button type="button">¥10,000</button>
                     <button type="button">全て</button>
                 </div>
-                <div class="row checkBtn">
-                    <button>確認</button>
+                <div class="row">
+                    <button type="button" class="checkBtn">Consulta</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">36588 SPORTS</p>
+                    <p class="money">$0</p>
+                </div>
+                <div class="row">
+                    <button type="button" class="betBtn close">Ir a jugar</button>
                 </div>
             </form>
-            <button class="enterBtn">ゲームに入る</button>
+            <i class="close"></i>
         </div>
     </div>
+    <!--背景-->
+    <div class="bg"></div>
 </body>
 </html>

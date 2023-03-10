@@ -372,92 +372,68 @@
 
         //遊戲轉帳彈窗
         &.gameWindow {
-            width: 92.27vw;
-            height: auto;
 
             form {
                 width: 100%;
                 height: auto;
-                box-sizing: border-box;
-                padding: 24px 16px 0;
-                border-bottom: solid 1px $mainBorder_1;
+                padding: 5vw;
 
                 .row {
+                    width: 100%;
+                    height: auto;
                     display: flex;
                     align-items: center;
-                    margin-bottom: 6vw;
+                    margin-bottom: 4vw;
 
-                    &:nth-of-type(2),
-                    &:nth-of-type(3) {
-                        margin-bottom: 2vw;
+                    &:nth-of-type(5) {
+                        margin: 7vw 0;
                     }
 
                     &.btnBox {
                         display: grid;
-                        grid-template-columns: repeat(2,1fr);
-                        grid-gap: 5px;
-                        margin: 0 0 4vw 36vw;
+                        grid-template-columns: repeat(4,1fr);
+                        gap: 1vw;
+                        margin-bottom: 7vw;
 
                         button {
                             width: auto;
-                            height: 35px;
-                            margin-bottom: 5px;
-                            @include noBgBtn_Normal;
-                            font-size: 3.4vw;
-                        }
-                    }
-
-                    &.checkBtn {
-
-                        button {
-                            width: 100%;
-                            height: 9.87vw;
-                            @include mainBtn;
-                            margin-left: 36vw;
+                            height: 11vw;
+                            @include fourthBtn;
                         }
                     }
 
                     .smallTitle {
-                        width: 36vw;
-                        height: auto;
-                        color: $mainWord_2;
-                        font-size: 3.4vw;
+                        color: $mainWord_1;
+                        font-size: 0.85rem;
                         font-weight: bold;
-                        letter-spacing: 1px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                        margin-right: 7vw;
                         flex-shrink: 0;
                     }
 
-                    .gameName {
+                    .money {
                         color: $mainWord_1;
-                        font-size: 5vw;
+                        font-size: 1.2rem;
                         font-weight: bold;
                     }
 
                     input {
                         width: 100%;
-                        height: 9.87vw;
+                        height: 11vw;
                         @include mainInput;
                     }
+                    
+                    .checkBtn {
+                        width: 100%;
+                        height: 11vw;
+                        @include mainBtn;
+                    }
 
-                    .arrow_ic {
-                        display: block;
-                        width: 4vw;
-                        height: 3vw;
-                        transform: rotate(90deg);
-                        margin-left: 18vw;
+                    .betBtn {
+                        width: 100%;
+                        height: 11vw;
+                        @include betBtn;    
                     }
                 }
-            }
-
-            .enterBtn {
-                display: block;
-                width: 90%;
-                height: 9.87vw;
-                margin: 4.8vw auto;
-                @include mainBtn;
             }
         }
 
@@ -627,45 +603,62 @@
             }
         }
 
-        //任務詳情
-        &.eventWindow {
-            width: 92.27vw;
-            height: auto;
+        //投注紀錄帳號+平台彈窗
+        &.accWindow,
+        &.platWindow {
 
             .content {
                 width: 100%;
                 height: auto;
-                max-height: 76vh;
+                max-height: 67vh;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 3vw;
                 overflow-y: auto;
-                box-sizing: border-box;
-                padding: 24px 24px 0;
+                padding: 5vw;
+
+                button {
+                    width: auto;
+                    height: 11vw;
+                    @include fourthBtn;
+
+                    &:first-child {
+                        grid-column-start: 1;
+                        grid-column-end: 4;
+                    }
+                }
+            }
+        }
+
+        //任務詳情
+        &.eventWindow {
+
+            .content {
+                width: 100%;
+                height: auto;
+                max-height: 50vh;
+                overflow-y: auto;
+                padding: 0 5vw 5vw;
 
                 p {
                     color: $mainWord_1;
-                    font-size: 14px;
-                    letter-spacing: 1px;
+                    font-size: 0.85rem;
                     font-weight: bold;
-                    line-height: 18px;
-                    margin-bottom: 8px;
+                    line-height: 1.2rem;
+                    margin-bottom: 2vw;
                     word-break: break-all;
                 }
 
                 img {
-                    margin-bottom: 10px;
+                    margin-bottom: 2vw;
                 }
             }
 
-            .btnBox {
-                width: 100%;
-                height: auto;
-                padding: 20px 0;
-                text-align: center;
-
-                button {
-                    width: 92%;
-                    height: 42px;
-                    @include mainBtn;
-                }
+            button {
+                width: 92%;
+                height: 11vw;
+                @include mainBtn;
+                margin: 4vw auto;
             }
         }
     }

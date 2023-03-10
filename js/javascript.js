@@ -108,15 +108,17 @@ $(function(){
         .addClass('display');
     })
 
-
-
     $(".searchContent .opAcc").click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.accWindow').addClass('display');
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.accWindow')
+        .addClass('display');
     })
     $(".searchContent .opPlat").click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.platWindow').addClass('display');
+        $('.jumpWindow')
+        .removeClass('display');
+        $('.filter,.platWindow')
+        .addClass('display');
     })
 
 
@@ -260,6 +262,44 @@ $(function(){
     })
 })
 
+//event .eventType切換
+$(function(){
+    $('.eventType li').click(function(){
+        $(this)
+        .addClass('active')
+        .siblings().removeClass('active');
+    })
+})
+
+//help
+function backToPage(){
+    $("header .helpPage").removeClass("display");
+    $("header .helpPage:eq(0)").addClass("display");
+
+    $(".helpInner").removeClass("display");
+    $(".helpWrap").addClass("display");
+}
+$(function(){
+    $(".helpBody li").click(function(){
+        var n = $(this).index();
+
+        $("header .helpPage:eq("+ (n + 1) +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+
+        $(".helpWrap")
+        .removeClass("display");
+
+        $(".helpInner,.helpInner ul:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+})
+
+
+
+
+
 
 
 
@@ -297,39 +337,9 @@ $(function(){
     })
 })
 
-//event .eventType切換
-$(function(){
-    $('.eventType li').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-})
 
 
-//help
-function backToPage(){
-    $("header .helpPage").removeClass("display");
-    $("header .helpPage:eq(0)").addClass("display");
 
-    $(".helpInner").removeClass("display");
-    $(".helpWrap").addClass("display");
-}
-$(function(){
-    $(".helpBody li").click(function(){
-        var n = $(this).index();
-
-        $("header .helpPage:eq("+ (n + 1) +")")
-        .addClass("display")
-        .siblings().removeClass("display");
-
-        $(".helpWrap")
-        .removeClass("display");
-
-        $(".helpInner,.helpInner ul:eq("+ n +")")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-})
 
 
 
@@ -395,18 +405,5 @@ $(function(){
     $('.withWrap .openBtn div').click(function(){
         $(this).toggleClass('active');
         $($(this).closest('.openBtn').prev('ul')).toggleClass('active');
-    })
-})
-
-
-
-//sendBtn
-$(function(){
-    $(".sendBtn").on("click",function(){
-        $(".jumpWindow")
-        .removeClass("display");
-
-        $(".filter,.plsGo")
-        .addClass("display");
     })
 })

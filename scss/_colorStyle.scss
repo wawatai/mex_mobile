@@ -8,13 +8,6 @@ $mainBG_4: #000000; //最最深背景
 
 $subBG_1: linear-gradient(to bottom,#463F72 0%,#232039 100%);
 
-//內頁背景樣式
-@mixin bgStyle_1 {
-    width: 100%;
-    height: calc(100vh - 96px);
-    overflow-y: auto;
-}
-
 //主要字色
 $mainWord_1: #EDECFF;
 $mainWord_2: #BEBEBE;
@@ -32,50 +25,14 @@ $mainBorder_2: #A4BFFF;
 
 //金額色
 $money: #ffffff;
-$money_Sp: #e11515;
 
-//可選字色
-$click: #A4BFFF;
 
 //小提示字色
 $remind: #35b751;
 $remind_Sp: #FF3030;
 
-//選擇列字色+選擇列active
-$choose_BG: #262626;
-$choose_ActiveBG: #181818;
-$choose_Word: #ffc13c;
-$choose_ActiveWord: #ff4719;
-
 //彈窗背景透明底
 $filter: #00000096;
-
-//箭頭小提示
-@mixin smallTip {
-    background: #3d3d3d;
-    padding: 6px 18px;
-    color: #cd8c2f;
-    border-radius: 3px;
-    font-size: 3vw;
-    position: relative;
-    white-space: nowrap;
-    box-sizing: border-box;
-    text-align: center;
-    font-weight: bold;
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -6px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 4px 6px 4px;
-        border-color: #3d3d3d transparent;
-    }
-}
 
 
 //頁面個別調整
@@ -167,11 +124,15 @@ $jumpWindow_BG: #2B2446;
     font-weight: bold;
     padding: 0 3vw;
 }
-
-
-
-
-
+@mixin betBtn {
+    background: linear-gradient(to right,#E3C91C 0%,#F451BE 100%);
+    border-radius: 30vw;
+    border: none;
+    color: #EDECFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0 3vw;
+}
 
 //mail
 @mixin mailBtn_1 {
@@ -191,76 +152,12 @@ $jumpWindow_BG: #2B2446;
     font-weight: bold;
 }
 
-@mixin mailWrap {
-    background: #181818;
-    border: solid 1px #ffc13c;
-    border-radius: 5px;
-    position: relative;
 
-    &.read {
-        border-color: #a88335;
-        background: #101010;
 
-        .title {
-            color: #cd8c2f;
-        }
-
-        .textBox {
-
-            p,.date {
-                color: #cd8c2f;
-            }
-        }
-    }
-
-    .title {
-        color: #ffc13c;
-    }
-
-    .textBox {
-
-        p {
-            color: #e2e2e2;
-        }
-
-        .date {
-            color: #cd8c2f;
-        }
-    }
-}
-@mixin mailWrap_2 {
-    background: #2e2e2e;
-    border-radius: 5px;
-
-    .title {
-        color: #ffc13c;
-    }
-}
 
 
 //slotPage
-@mixin slotSearch {
-    background: #060606;
-    border: solid 1px #a88335;
-    padding: 4px 10px 4px 15px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-}
-@mixin slotSearch_Input {
-    background: none;
-    border: none;
-    color: #ffc13c;
-    padding-left: 10px;
-    font-size: 13px;
-    font-weight: bold;
-    box-sizing: border-box;
 
-    &::placeholder {
-        color: #cd8c2f;
-    }
-}
 @mixin slotGameBox {
     background: #2f2f2f;
     border-radius: 5px;
@@ -336,11 +233,6 @@ $jumpWindow_BG: #2B2446;
 }
 
 
-
-//help
-$help_remind: #ff4719;
-$help_box_BG: #2a2a2a;
-$help_box_Border: #979797;
 
 
 //button
@@ -424,55 +316,6 @@ $help_box_Border: #979797;
     &:active,&.active {
         background: linear-gradient(to right,#6140B3 0%,#469FE3 100%);
     }
-}
-
-//無背景按鈕常用類
-@mixin noBgBtn_Normal {
-    background: #101010;
-    border-radius: 3px;
-    border: solid 1px #a88335;
-    color: #ffc13c;
-    font-size: 13px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:active,&.active {
-        background: #ffc13c;
-        border-color: #ffc13c;
-        color: #101010;
-    }
-}
-$help_reBtn_BG: #282828;
-
-
-
-
-
-//假select樣式按鈕
-@mixin fakeSelect {
-    background: #101010;
-    border-radius: 3px;
-    border: solid 1px #ffc13c;
-    color: #ffffff;
-    font-size: 4vw;
-    padding: 0 15px 4px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    // justify-content: space-between;
-    font-weight: bold;
-
-    // i {
-    //     display: block;
-    //     width: 0;
-    //     height: 0;
-    //     border-style: solid;
-    //     border-width: 6px 4px 0 4px;
-    //     border-color: #957222 transparent;
-    // }
 }
 
 button:disabled {
